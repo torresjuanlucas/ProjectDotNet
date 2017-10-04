@@ -5,54 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HR"
         mc:Ignorable="d"
-        Title="MainWindow" Height="413.171" Width="725.61" Background="#FF363434">
-    <TabControl HorizontalAlignment="Left" Height="305" Margin="24,59,0,0" VerticalAlignment="Top" Width="610">
-        <TabItem Header="Employee" Margin="-2,-2,-96,0">
-            <Grid Background="#FF4F4A4A">
-                <Image HorizontalAlignment="Left" Height="230" Margin="24,23,-2,0" VerticalAlignment="Top" Width="178" OpacityMask="White" />
-                <Label Content="Full Name" HorizontalAlignment="Left" Height="24" Margin="218,23,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Department" HorizontalAlignment="Left" Height="24" Margin="218,52,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Birth Date" HorizontalAlignment="Left" Height="24" Margin="218,81,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Gender" HorizontalAlignment="Left" Height="24" Margin="218,110,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Address" HorizontalAlignment="Left" Height="24" Margin="218,139,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Postal Code" HorizontalAlignment="Left" Height="24" Margin="218,168,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Phone" HorizontalAlignment="Left" Height="24" Margin="218,197,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <Label Content="Hire Date" HorizontalAlignment="Left" Height="24" Margin="218,226,0,0" VerticalAlignment="Top" Width="101" Foreground="White"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,81,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,139,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,197,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="324,226,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868"/>
-            </Grid>
-        </TabItem>
-        <TabItem Header="Payment" Margin="0,-2,-120,0" HorizontalAlignment="Right" Width="180">
-            <TabItem.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </TabItem.Background>
-            <Grid Background="#FFE5E5E5">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="29*"/>
-                    <ColumnDefinition Width="411*"/>
-                </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="242,-77,0,0" TextWrapping="Wrap" Text="Search Employee ID " VerticalAlignment="Top" Width="232" Background="#FF958E8E" Foreground="#FFDC0E0E"/>
-            </Grid>
-        </TabItem>
-        <TabItem Header="Report" Margin="0,-2,-144,0" HorizontalAlignment="Right" Width="186">
-            <Grid Background="#FFE5E5E5" Margin="0,0,-3,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="29*"/>
-                    <ColumnDefinition Width="411*"/>
-                </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="242,-77,0,0" TextWrapping="Wrap" Text="Search Employee ID " VerticalAlignment="Top" Width="232" Background="#FF958E8E" Foreground="#FFDC0E0E"/>
-            </Grid>
-        </TabItem>
-    </TabControl>
+        Title="MainWindow" Height="486.171" Width="826.61" Background="#FF363434">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="25"  TextWrapping="Wrap" Text="Search Employee ID&#xA;" VerticalAlignment="Top" Width="219" Margin="557,22,0,0" Background="#FF9E9797" FontWeight="Bold" Foreground="White" TextAlignment="Center" />
+        <TabControl HorizontalAlignment="Left" Height="353" Margin="34,71,0,0" VerticalAlignment="Top" Width="742" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A">
+            <TabItem Header="Employee" Margin="-2,-2,-111,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold">
+                <Grid Background="#FF4F4A4A">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="71*"/>
+                        <ColumnDefinition Width="297*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Left" Height="230" Margin="24,23,0,0" VerticalAlignment="Top" Width="178" OpacityMask="White" Grid.ColumnSpan="2" />
+                    <Label Content="Full Name" HorizontalAlignment="Left" Height="24" Margin="76,23,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Department" HorizontalAlignment="Left" Height="24" Margin="76,52,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Birth Date" HorizontalAlignment="Left" Height="24" Margin="76,81,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Gender" HorizontalAlignment="Left" Height="24" Margin="76,110,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Address" HorizontalAlignment="Left" Height="24" Margin="76,139,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Postal Code" HorizontalAlignment="Left" Height="24" Margin="76,168,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Phone" HorizontalAlignment="Left" Height="24" Margin="76,197,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <Label Content="Hire Date" HorizontalAlignment="Left" Height="24" Margin="76,226,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,81,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,139,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,197,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="24" Margin="182,226,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="1"/>
 
+                </Grid>
+            </TabItem>
+            <TabItem Header="Payment" Margin="0,-2,-147,0" HorizontalAlignment="Right" Width="231" RenderTransformOrigin="0.248,0.409" Background="#FF4F4A4A" Foreground="#FFFF8000" BorderBrush="#FF4F4A4A" Height="22" VerticalAlignment="Bottom" FontWeight="Bold"/>
+            <TabItem Header="Report" Margin="0,-2,-165,0" HorizontalAlignment="Right" Width="233" Foreground="#FF23FF00" Background="#FF4F4A4A" BorderBrush="#FF4F4A4A" FontWeight="Bold">
+                <Grid Background="#FF4F4A4A" Margin="0,0,1,1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="411*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
+    </Grid>
 </Window>
