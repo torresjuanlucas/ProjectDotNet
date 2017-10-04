@@ -16,7 +16,7 @@ date and name
 * partially done app overview and UI
 
 2. Will do in next 24 hours
-
+>>>added 3 user story.
 >>>>>review the proposal 
 -adding screen shots of windows
 -make a summary
@@ -27,7 +27,7 @@ date and name
 -make new tabs
 -edit existing tabs
 
-3. Where I need help? i asked hanna to fix my Xaml code.
+3. Where I need help? i asked hanna and Vajihe to fix my Xaml code.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 2017/10/04 Lucas (wednesday)
 1. Look into how to create the database tables 
