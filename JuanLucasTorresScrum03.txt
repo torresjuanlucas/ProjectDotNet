@@ -1,0 +1,4 @@
+2017/10/03 Juan Lucas Torres
+1. I tried to create the tables.
+2. I will revise how to do a database properly.
+3. I will look into tutorial in internet.
