@@ -1,0 +1,35 @@
+Every day both team members write the following:
+
+date and name
+1. what have i done / not done sincce last scrum?
+2. what will i do from now until next scrum?
+3. where do i need help from my teammate, teacher, or internet?
+
+----------------------------------
+
+2017/10/03 Mojgan (Tuesday)
+1. i worked on application overview and user Interface. 
+----------------------------------
+
+2017/10/04 Mojgan (wednesday)
+1. Done / not done
+* partially done app overview and UI
+
+2. Will do in next 24 hours
+
+>>>>>review the proposal 
+-adding screen shots of windows
+-make a summary
+-put user stories in Trello
+
+>>>>>creating and editing windows(UI)
+-working on graphics
+-make new tabs
+-edit existing tabs
+
+3. Where I need help? i asked hanna to fix my Xaml code.
+----------------------------------------------
+
+
+
+
