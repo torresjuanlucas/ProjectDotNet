@@ -28,6 +28,23 @@ date and name
 -edit existing tabs
 
 3. Where I need help? i asked hanna to fix my Xaml code.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017/10/04 Lucas (wednesday)
+1. Look into how to create the database tables 
+* partially done it
+
+2. Will do in next 24 hours
+
+>>>>>review the proposal 
+
+-put user stories in Trello
+
+>>>>>creating database tables and data dictionary
+-create primary keys and foreign keys 
+-figure out the relationships
+-figure out data types for each column
+
+3. Where I need help? a more general knowledge in database (need to look into it today).
 ----------------------------------------------
 
 
