@@ -48,5 +48,22 @@ date and name
 ----------------------------------------------
 
 
+2017/10/05 Mojgan (Thursday)
+1. Done / not done
+* done app overview and UI of two tabs(Employee and Payment)
+-added 3 user story.
+2. Will do in next 24 hours
+>>>added 3 user story.
+>>>>>review the proposal 
+-adding screen shots of windows
+-make a summary
+-put user stories in Trello
+
+>>>>>creating and editing windows(UI)
+-working on graphics
+-make new tabs
+-edit existing tabs
+
+3. Where I need help? i asked hanna and Vajihe to fix my Xaml code.
 
 
