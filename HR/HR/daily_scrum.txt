@@ -46,7 +46,10 @@ date and name
 
 3. Where I need help? a more general knowledge in database (need to look into it today).
 ----------------------------------------------
-
-
+2017/10/05 Lucas (Thursday)
+1. Look into how to create the database tables 
+* Imagine account done.
+2. Data dictionary done.
+3. internet help
 
 
