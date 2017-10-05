@@ -4,12 +4,11 @@ date and name
 1. what have i done / not done sincce last scrum?
 2. what will i do from now until next scrum?
 3. where do i need help from my teammate, teacher, or internet?
-
-----------------------------------
+====================================================================================================
 
 2017/10/03 Mojgan (Tuesday)
 1. i worked on application overview and user Interface. 
-----------------------------------
+====================================================================================================
 
 2017/10/04 Mojgan (wednesday)
 1. Done / not done
@@ -45,25 +44,28 @@ date and name
 -figure out data types for each column
 
 3. Where I need help? a more general knowledge in database (need to look into it today).
-----------------------------------------------
+====================================================================================================
 
 
 2017/10/05 Mojgan (Thursday)
 1. Done / not done
-* done app overview and UI of two tabs(Employee and Payment)
+-done app overview and UI of two tabs(Employee and Payment)
 -added 3 user story.
+-azure account and database created.
 2. Will do in next 24 hours
->>>added 3 user story.
->>>>>review the proposal 
--adding screen shots of windows
--make a summary
--put user stories in Trello
+>>>code for tab 1(Employment).
+-upload a photo in wpf  and save it into database.
+-get user data and validate it.
+3. Where I need help?
+-youtube videos for dynamic chart!
+-google
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017/10/05 Lucas (Thursday)
+1. Look into how to create the database tables 
+* Imagine account done.
+2. Data dictionary done.
+3. internet help
+>>>>>>> 350a941868dd64808d102b48281b37591d6945f1
 
->>>>>creating and editing windows(UI)
--working on graphics
--make new tabs
--edit existing tabs
-
-3. Where I need help? i asked hanna and Vajihe to fix my Xaml code.
-
+========================================================================================================
 
