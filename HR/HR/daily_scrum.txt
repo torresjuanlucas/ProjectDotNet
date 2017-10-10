@@ -69,3 +69,21 @@ date and name
 
 ========================================================================================================
 
+
+2017/10/10 Mojgan (Tuesday)
+1. Done / not done
+-tried to complete geting user input for the first tab.
+-added a data grid containing Employee ID and Employee FullName above the tabs to be more accessible.
+
+2. Will do in next 24 hours
+>>>testing the code if it works properly for the first tab(Employment information).
+>>>trying to get the search bar worked.
+>>>fixing my laptop to conncet to Git and Source tree.
+>>>trying to install visual Studio2017 again(I tried during the weekend but I could not).
+>>>Editing Trello.
+
+3. Where I need help?
+-I asked Hanna once regarding the code behind the UI(the format I needed to save the user data).
+-google
+-stackoverflow
+-I find everything really challenging; without the help of strong students it is really hard to figure it out.(most of them are busy)

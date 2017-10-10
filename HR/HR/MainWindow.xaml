@@ -5,13 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HR"
         mc:Ignorable="d"
-        Title="MainWindow" Height="607.671" Width="815.86" Background="#FF363434">
+        Title="MainWindow" Height="646.671" Width="815.86" Background="#FF363434">
     <Grid Margin="0,6,-1,-27">
-        <Button Content="Search" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Height="22" Background="#FFFF8000" BorderBrush="#FFFF8000" Margin="488,28,0,0" >
+        <Button Content="Search" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="87" Height="22" Background="#FFFF8000" BorderBrush="#FFFF8000" Margin="248,65,0,0" >
 
         </Button>
-        <TextBox HorizontalAlignment="Left" Height="22"  TextWrapping="Wrap" Text="Search Employee ID&#xA;" VerticalAlignment="Top" Width="213" Margin="563,28,0,0" Background="#FF9E9797" Foreground="White" TextAlignment="Center"  BorderBrush="White" />
-        <TabControl HorizontalAlignment="Left" Height="386" Margin="34,89,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A" >
+        <TextBox HorizontalAlignment="Left" Height="22"  TextWrapping="Wrap" Text="Search By Employee ID&#xA;" VerticalAlignment="Top" Width="250" Margin="335,65,0,0" Background="#FF9E9797" Foreground="White" TextAlignment="Center"  BorderBrush="White" />
+        <Button Content="Search" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="87" Height="22" Background="#FFFF8000" BorderBrush="#FFFF8000" Margin="248,38,0,0" />
+        <TextBox HorizontalAlignment="Left" Height="22"  TextWrapping="Wrap" Text="Search by Employee FullName&#xA;" VerticalAlignment="Top" Width="250" Margin="335,38,0,0" Background="#FF9E9797" Foreground="White" TextAlignment="Center"  BorderBrush="White"  />
+
+        <TabControl HorizontalAlignment="Left" Height="386" Margin="34,192,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A" >
             <TabItem Header="Employee" Margin="-2,-2,-123,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="250">
                 <Grid Background="#FF4F4A4A">
                     <Grid.ColumnDefinitions>
@@ -21,42 +24,40 @@
                         <ColumnDefinition Width="99*"/>
 
                     </Grid.ColumnDefinitions>
-                    <Image Name="imgPhoto" HorizontalAlignment="Left" Height="190" Margin="24,58,0,0" VerticalAlignment="Top" Width="178" OpacityMask="White" Grid.ColumnSpan="2" Source="photo.png" />
 
-                    <Label Content="Full Name" HorizontalAlignment="Left" Height="24" Margin="36,23,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Department" HorizontalAlignment="Left" Height="24" Margin="36,52,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Birth Date" HorizontalAlignment="Left" Height="24" Margin="36,81,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Gender" HorizontalAlignment="Left" Height="24" Margin="36,110,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Address" HorizontalAlignment="Left" Height="24" Margin="36,139,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Postal Code" HorizontalAlignment="Left" Height="24" Margin="36,168,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Phone" HorizontalAlignment="Left" Height="24" Margin="36,197,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <Label Content="Hire Date" HorizontalAlignment="Left" Height="24" Margin="36,226,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <TextBox  Name="tbFullName" HorizontalAlignment="Left" Height="24" Margin="14,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3"  Background="#FF9E9797"/>
-                    <TextBox  Name="tbBirthDate" HorizontalAlignment="Left" Height="24" Margin="14,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <TextBox   Name="tbGender" HorizontalAlignment="Left" Height="24" Margin="14,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <TextBox  Name="tbAddress" HorizontalAlignment="Left" Height="24" Margin="14,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <TextBox   Name="tbPostalCode" HorizontalAlignment="Left" Height="24" Margin="14,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <TextBox   Name="tbPhone" HorizontalAlignment="Left" Height="24" Margin="14,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <TextBox  Name="tbHireDate" HorizontalAlignment="Left" Height="24" Margin="14,226,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <Button  Name="btnEdit" Content="Edit" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="260,132,0,0" VerticalAlignment="Top" Width="106" Background="#FF00DCFF"/>
-                    <Button  Name="btnSave" Content="Save" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="260,177,0,0" VerticalAlignment="Top" Width="106" Background="#FF00DCFF"/>
-                    <Button  Name="btnPrint" Content="Print" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="260,222,0,0" VerticalAlignment="Top" Width="106" Background="#FF00DCFF"/>
-                    <Button   Name="btnClear" Content="Clear" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="260,268,0,0" VerticalAlignment="Top" Width="106" Background="#FF00DCFF"/>
-                    <Label  Name="lblJobTitleCode" Content="Job Title" HorizontalAlignment="Left" Height="24" Margin="36,255,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <TextBox  Name="tbJobTitleCode" HorizontalAlignment="Left" Height="24" Margin="14,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <Label Name="lblCity" Content="City" HorizontalAlignment="Left" Height="33" Margin="36,284,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="2" Grid.ColumnSpan="2"/>
-                    <TextBox  Name="tbCity" HorizontalAlignment="Left" Height="24" Margin="14,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="3" Background="#FF9E9797"/>
-                    <Button  Name="btnAddNew" Content="Add New" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="260,87,0,0" VerticalAlignment="Top" Width="106" Background="#FF00DCFF" Click="btnAddNew_Click"/>
-                    <Button  Name="btnLoadPhoto" Content="Load Photo" HorizontalAlignment="Left" Height="24" Margin="24,249,0,0" VerticalAlignment="Top" Width="178" Background="#FF00DCFF" Grid.ColumnSpan="2" Click="btnLoadPhoto_Click"/>
-                    <Grid Margin="0,0,162,0" Grid.Column="3">
-                        <ComboBox SelectionChanged="ComboBox_SelectionChanged" Name="cmbDepartment" Grid.Column="3" HorizontalAlignment="Left" Height="24" Margin="14,52,0,0" VerticalAlignment="Top" Width="220">
-                            <ComboBoxItem   Name="Marketing">Item1</ComboBoxItem>
-                            <ComboBoxItem  Name="IT">Item2</ComboBoxItem>
-                            <ComboBoxItem  Name="Finance">Item3</ComboBoxItem>
-                            <ComboBoxItem  Name="HR">Item3</ComboBoxItem>
-                            
+                    <Label Content="Full Name" HorizontalAlignment="Left" Height="24" Margin="4,75,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Department" HorizontalAlignment="Left" Height="24" Margin="4,104,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Birth Date" HorizontalAlignment="Left" Height="24" Margin="4,133,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Gender" HorizontalAlignment="Left" Height="24" Margin="4,162,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Address" HorizontalAlignment="Left" Height="24" Margin="4,191,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Postal Code" HorizontalAlignment="Left" Height="24" Margin="4,220,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Phone" HorizontalAlignment="Left" Height="24" Margin="4,249,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <DatePicker  Name="DatePicker1" Grid.Column="2" HorizontalAlignment="Left" Margin="70,133,0,0" VerticalAlignment="Top" Width="220" Grid.ColumnSpan="2"/>
+
+
+                    <TextBox  Name="tbFullName" HorizontalAlignment="Left" Height="24" Margin="70,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2"  Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <TextBox  Name="tbAddress" HorizontalAlignment="Left" Height="24" Margin="70,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <TextBox   Name="tbPostalCode" HorizontalAlignment="Left" Height="24" Margin="70,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <TextBox   Name="tbPhone" HorizontalAlignment="Left" Height="24" Margin="70,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <Button  Name="btnEdit" Content="Edit and Save" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,174,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnEdit_Click"/>
+                    <Button  Name="btnPrint" Content="Print" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,222,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" />
+                    <Button   Name="btnClear" Content="Clear" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,268,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnClear_Click"/>
+                    <Label  Name="lblJobTitleCode" Content="Job Title" Height="24" Margin="4,279,63,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <TextBox  Name="tbJobTitleCode" HorizontalAlignment="Left" Height="24" Margin="70,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <Button  Name="btnAddNew" Content="Add New" Grid.Column="3" HorizontalAlignment="Left" Height="39" Margin="211,126,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnAddNew_Click"/>
+                    <Grid  Margin="0,0,162,0"  Grid.Column="3" >
+                        <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-58,104,0,0" VerticalAlignment="Top" Width="220">
+                            <ComboBoxItem   Name="Marketing">Marketing</ComboBoxItem>
+                            <ComboBoxItem  Name="IT">IT</ComboBoxItem>
+                            <ComboBoxItem  Name="Finance">Finance</ComboBoxItem>
+                            <ComboBoxItem  Name="HR">HR</ComboBoxItem>
+
                         </ComboBox>
                     </Grid>
+                    <RadioButton Name="rbFemale" GroupName="Gender" Content="F" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="70,166,0,0" VerticalAlignment="Top" Width="34"/>
+                    <RadioButton Name="rbMale" GroupName="Gender" Content="M" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="109,166,0,0" VerticalAlignment="Top" Width="53" Grid.ColumnSpan="2"/>
+                    <RadioButton Name="rbNA" GroupName="Gender" Content="N\A" Grid.Column="3" HorizontalAlignment="Left" Height="20" Margin="39,166,0,0" VerticalAlignment="Top" Width="68"/>
+
 
                 </Grid>
             </TabItem>
@@ -106,6 +107,14 @@
 
 
         </TabControl>
+        <DataGrid HorizontalAlignment="Left" Height="60" Margin="248,92,0,0" VerticalAlignment="Top" Width="337">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Employee ID" Binding="{Binding EmployeeID}" />
+                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" />
+            </DataGrid.Columns>
+            
+        </DataGrid>
+
 
 
 
