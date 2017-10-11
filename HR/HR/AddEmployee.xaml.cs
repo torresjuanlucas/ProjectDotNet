@@ -1,8 +1,5 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,29 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace HR
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddEmployee.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddEmployee : Window
     {
-        public MainWindow()
+        public AddEmployee()
         {
             InitializeComponent();
         }
-       
-            private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void btnAddNew_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
     }
 }
-      
-    
-
- 

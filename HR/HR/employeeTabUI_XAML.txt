@@ -1,0 +1,232 @@
+ <TabItem Header="Employee" Margin="-2,-2,-123,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="250">
+                <Grid Background="#FF4F4A4A">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="32*"/>
+                        <ColumnDefinition Width="99*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Full Name" HorizontalAlignment="Left" Height="24" Margin="4,75,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Department" HorizontalAlignment="Left" Height="24" Margin="4,104,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Birth Date" HorizontalAlignment="Left" Height="24" Margin="4,133,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Gender" HorizontalAlignment="Left" Height="24" Margin="4,162,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Address" HorizontalAlignment="Left" Height="24" Margin="4,191,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Postal Code" HorizontalAlignment="Left" Height="24" Margin="4,220,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Phone" HorizontalAlignment="Left" Height="24" Margin="4,249,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <DatePicker  Name="DatePicker1" Grid.Column="2" HorizontalAlignment="Left" Margin="70,133,0,0" VerticalAlignment="Top" Width="220" Grid.ColumnSpan="2"/>
+
+
+                    <TextBox  Name="tbFullName" HorizontalAlignment="Left" Height="24" Margin="70,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2"  Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <TextBox  Name="tbAddress" HorizontalAlignment="Left" Height="24" Margin="70,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <TextBox   Name="tbPostalCode" HorizontalAlignment="Left" Height="24" Margin="70,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <TextBox   Name="tbPhone" HorizontalAlignment="Left" Height="24" Margin="70,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <Button  Name="btnEdit" Content="Edit and Save" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,174,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnEdit_Click"/>
+                    <Button  Name="btnPrint" Content="Print" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,222,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" />
+                    <Button   Name="btnClear" Content="Clear" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,268,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnClear_Click"/>
+                    <Label  Name="lblJobTitleCode" Content="Job Title" Height="24" Margin="4,279,63,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <TextBox  Name="tbJobTitleCode" HorizontalAlignment="Left" Height="24" Margin="70,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
+                    <Button  Name="btnAddNew" Content="Add New" Grid.Column="3" HorizontalAlignment="Left" Height="39" Margin="211,126,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnAddNew_Click"/>
+                    <Grid  Margin="0,0,162,0"  Grid.Column="3" >
+                        <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-58,104,0,0" VerticalAlignment="Top" Width="220">
+                            <ComboBoxItem   Name="Marketing">Marketing</ComboBoxItem>
+                            <ComboBoxItem  Name="IT">IT</ComboBoxItem>
+                            <ComboBoxItem  Name="Finance">Finance</ComboBoxItem>
+                            <ComboBoxItem  Name="HR">HR</ComboBoxItem>
+
+                        </ComboBox>
+                    </Grid>
+                    <RadioButton Name="rbFemale" GroupName="Gender" Content="F" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="70,166,0,0" VerticalAlignment="Top" Width="34"/>
+                    <RadioButton Name="rbMale" GroupName="Gender" Content="M" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="109,166,0,0" VerticalAlignment="Top" Width="53" Grid.ColumnSpan="2"/>
+                    <RadioButton Name="rbNA" GroupName="Gender" Content="N\A" Grid.Column="3" HorizontalAlignment="Left" Height="20" Margin="39,166,0,0" VerticalAlignment="Top" Width="68"/>
+
+
+                </Grid>
+            </TabItem>
+			
+			===========================================
+			==============code for employee UI=============================================
+			
+			
+			
+        //string FullName;
+        //string Department;
+        //DateTime BirthDate;
+        //string Address;
+        //string PostalCode;
+        //string Phone;
+
+        //string JobTitle;
+
+        //private object datePicker1;
+
+
+        //========================Add button====================
+
+        //private void btnAddNew_Click(object sender, RoutedEventArgs e)
+
+        //{
+
+        //    SqlConnection con = new SqlConnection(@"Server=tcp:lucastorres.database.windows.net,1433;Initial Catalog=hrproject;Persist Security Info=False;User ID={lucastorres};Password={LucasLucas1};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        //    con.Open();
+
+        //    FullName = tbFullName.Text;
+
+        //    //verify full name
+        //    if (FullName.Length < 2 || FullName.Length > 50)
+        //    {
+        //        MessageBox.Show("Name must be between 2 and 50  characters long", "Error Input");
+        //        return;
+        //    }
+        //    if (FullName.IndexOf(';') != -1)
+        //    {
+        //        MessageBox.Show("Name Can't contains ';'", "Error Input");
+        //        return;
+        //    }
+
+
+
+        //    //birth date
+        //    //string theDate = DatePicker1.String("yyyy-MM-dd");
+        //    DateTimePicker DatePicker1 = new DateTimePicker();
+
+        //    MessageBox.Show(DatePicker1.Value.ToString());
+
+        //    //Gender
+        //    String gender = (rbMale.IsChecked == true ? "Male" : (rbFemale.IsChecked == true ? "Female" : "N/A"));
+
+
+
+        //    //phone
+        //    String phone = tbPhone.Text;
+
+
+        //    //Address
+        //    String Address = tbAddress.Text;
+
+        //    //JobTitleCode
+        //    String JobTitle = tbJobTitleCode.Text;
+
+
+        //    //PostalCode
+        //    String PostalCode = tbPostalCode.Text;
+
+
+
+        //    try
+        //    {
+        //        string sql = "INSERT INTO Employees (FullName, Department, Address, postalCode, phone, gender, jobTitle) VALUES "
+        //    + " (@FullName,@Department,@Address,@postalCode,@phone,@gender,@jobTitle)";
+
+
+
+        //        SqlCommand cmd = new SqlCommand(sql, con);
+        //        cmd.ExecuteNonQuery();
+
+        //        string str1 = "select max(emp_id) from employee ;";
+
+        //        SqlCommand cmd1 = new SqlCommand(str1, con);
+        //        SqlDataReader dr = cmd1.ExecuteReader();
+        //        if (dr.Read())
+        //        {
+        //            MessageBox.Show("" + tbFullName.Text + "'s Details is Inserted Successfully.. " + cmbDepartment.Text + "'s Id is " + dr.GetInt32(0) + ".", "Important Message");
+        //            this.Hide();
+
+        //        }
+        //        this.Close();
+        //    }
+        //    catch (SqlException excep)
+        //    {
+        //        MessageBox.Show(excep.Message);
+        //    }
+        //    con.Close();
+        //}
+
+
+        //=========================Edit(modify) button=============================
+
+
+        //private void btnEdit_Click(object sender, RoutedEventArgs e)
+        //{
+        //    SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=c:\users\n\documents\visual studio 2010\Projects\EmployeeInformationSystem\EmployeeInformationSystem\Company.mdf;Integrated Security=True;User Instance=True");
+        //    con.Open();
+        //    try
+        //    {
+        //        string str = " Update employee set name='" + tbFullName.Text + "',phone='" + tbPhone.Text + "',jobTitle='" + tbJobTitleCode.Text + "',address='" + tbAddress.Text + "',='" + BirthDate.Date + "',department='" + cmbDepartment.Text  +  "'";
+
+        //        SqlCommand cmd = new SqlCommand(str, con);
+        //        cmd.ExecuteNonQuery();
+
+        //        string str1 = "select max(emp_id) from employee ;";
+
+        //        SqlCommand cmd1 = new SqlCommand(str1, con);
+        //        SqlDataReader dr = cmd1.ExecuteReader();
+        //        if (dr.Read())
+        //        {
+        //            MessageBox.Show("" + tbFullName.Text + "'s Details is Updated Successfully.. ", "Important Message");
+        //            this.Hide();
+
+        //        }
+        //        this.Close();
+        //    }
+        //    catch (SqlException excep)
+        //    {
+        //        MessageBox.Show(excep.Message);
+        //    }
+        //    con.Close();
+
+        //}
+
+        //=========================== Clear  the Form  button=============================
+        //private void btnClear_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //       cmbDepartment.SelectedIndex = -1;
+        //        rbFemale.IsChecked = false;
+        //        rbMale.IsChecked = false;
+        //        rbNA.IsChecked = false;
+        //    tbFullName.Text = "";
+        //    tbPhone.Text = "";
+        //    cmbDepartment.Text = "";
+        //    tbAddress.Text = "";
+        //    tbPostalCode.Text = "";
+        //    tbJobTitleCode.Text = "";
+
+    //}
+
+
+ 
+
+			
+			========================================UI===================================
+			
+			
+			
+			
+			
+			=================data grid=================
+		
+			   <DataGrid HorizontalAlignment="Left" Height="60" Margin="248,92,0,0" VerticalAlignment="Top" Width="337" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Employee ID" Binding="{Binding EmployeeID}" />
+                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" />
+            </DataGrid.Columns>
+            
+        </DataGrid>
+			
+			============================================
+			
+			
+			
+			
+			====================search bar ================
+			 <Button Content="Search" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="87" Height="22" Background="#FFFF8000" BorderBrush="#FFFF8000" Margin="248,65,0,0" >
+
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="22"  TextWrapping="Wrap" Text="Search By Employee ID&#xA;" VerticalAlignment="Top" Width="250" Margin="335,65,0,0" Background="#FF9E9797" Foreground="White" TextAlignment="Center"  BorderBrush="White" />
+        <Button Content="Search" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="87" Height="22" Background="#FFFF8000" BorderBrush="#FFFF8000" Margin="248,38,0,0" />
+        <TextBox HorizontalAlignment="Left" Height="22"  TextWrapping="Wrap" Text="Search by Employee FullName&#xA;" VerticalAlignment="Top" Width="250" Margin="335,38,0,0" Background="#FF9E9797" Foreground="White" TextAlignment="Center"  BorderBrush="White"  />
+
+				============================================
+			
