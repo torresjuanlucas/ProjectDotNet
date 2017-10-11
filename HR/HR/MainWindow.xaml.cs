@@ -23,16 +23,42 @@ namespace HR
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-       
-            private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        ////Database ProjectDatabase;
 
+        ////public MainWindow()
+        ////{
+        ////    try
+        ////    {
+        ////        ProjectDatabase = new Database();
+        ////        InitializeComponent();
+        ////        ReloadEmployeeList();
+        ////    }
+        ////    catch (SqlException ex)
+        ////    {
+        ////        MessageBox.Show("Database error: " + ex.Message);
+        ////    }
+        ////}
+
+
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddEmployee win2 = new AddEmployee();
+            win2.Show();
+            this.Close();
         }
 
+
+        //private void ReloadPersonList()
+        //{
+        //    List<Employee> list = ProjectDatabase.GetAllEmployees();
+        //    lsvEmployee.Items.Clear();
+        //    foreach (Employee E in list)
+        //    {
+        //        lsvEmployee.Items.Add(E);
+        //    }
+        //}
     }
 }
       

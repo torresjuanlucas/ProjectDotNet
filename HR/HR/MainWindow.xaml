@@ -12,7 +12,7 @@
             <TabItem Header="Employee" Margin="-2,-2,-123,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="250">
 
                 <Grid>
-                    <ListView Margin="16,14,19,67">
+                    <ListView Name="lsvEmployee" Margin="16,14,19,67">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Name}"/>
@@ -30,7 +30,7 @@
                     </ListView>
 
 
-                    <Button Content="Button" Height="49" Margin="299,299,306,10" Click="Button_Click"/>
+                    <Button Content="Add / Edit" Height="49" Margin="299,299,306,10" Click="Button_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Payment" HorizontalAlignment="Right" Width="241" RenderTransformOrigin="0.248,0.409" Background="#FF4F4A4A" Foreground="#FFFF8000" BorderBrush="#FF4F4A4A" FontWeight="Bold" Height="20" VerticalAlignment="Bottom" Margin="0,-2,-12,2">
