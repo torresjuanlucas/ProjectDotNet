@@ -4,12 +4,11 @@ date and name
 1. what have i done / not done sincce last scrum?
 2. what will i do from now until next scrum?
 3. where do i need help from my teammate, teacher, or internet?
-
-----------------------------------
+====================================================================================================
 
 2017/10/03 Mojgan (Tuesday)
 1. i worked on application overview and user Interface. 
-----------------------------------
+====================================================================================================
 
 2017/10/04 Mojgan (wednesday)
 1. Done / not done
@@ -45,11 +44,64 @@ date and name
 -figure out data types for each column
 
 3. Where I need help? a more general knowledge in database (need to look into it today).
-----------------------------------------------
+====================================================================================================
+
+
+2017/10/05 Mojgan (Thursday)
+1. Done / not done
+-done app overview and UI of two tabs(Employee and Payment)
+-added 3 user story.
+-azure account and database created.
+2. Will do in next 24 hours
+>>>code for tab 1(Employment).
+-upload a photo in wpf  and save it into database.
+-get user data and validate it.
+3. Where I need help?
+-youtube videos for dynamic chart!
+-google
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 2017/10/05 Lucas (Thursday)
 1. Look into how to create the database tables 
 * Imagine account done.
 2. Data dictionary done.
 3. internet help
+>>>>>>> 350a941868dd64808d102b48281b37591d6945f1
+
+========================================================================================================
 
 
+2017/10/10 Mojgan (Tuesday)
+1. Done / not done
+-tried to complete geting user input for the first tab.
+-added a data grid containing Employee ID and Employee FullName above the tabs to be more accessible.
+
+2. Will do in next 24 hours
+>>>testing the code if it works properly for the first tab(Employment information).
+>>>trying to get the search bar worked.
+>>>fixing my laptop to conncet to Git and Source tree.
+>>>trying to install visual Studio2017 again(I tried during the weekend but I could not).
+>>>Editing Trello.
+
+3. Where I need help?
+-I asked Hanna once regarding the code behind the UI(the format I needed to save the user data).
+-google
+-stackoverflow
+-I find everything really challenging; without the help of strong students it is really hard to figure it out.(most of them are busy)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+2017/10/10 Lucas (Wednesday)
+1. Done / not done
+-tried to create database.
+-added class Database and class Employee.
+
+2. Will do in next 24 hours
+>>>adding all the data needed for the tables
+>>>fixing my laptop to conncet to Git and Source tree.
+>>>Editing Trello.
+
+3. Where I need help?
+-I don't know how to do the database properly.
+-google
+-stackoverflow
+-This is very frustraiting for me; Im struggling with every step.

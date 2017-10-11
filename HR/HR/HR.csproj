@@ -62,7 +62,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Employee.cs" />
+=======
+    <Compile Include="DateTimePicker.cs" />
+>>>>>>> fb230f05f44909f3e151c2967b1d1889e466245e
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
