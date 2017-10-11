@@ -107,7 +107,7 @@
 
 
         </TabControl>
-        <DataGrid HorizontalAlignment="Left" Height="60" Margin="248,92,0,0" VerticalAlignment="Top" Width="337">
+        <DataGrid HorizontalAlignment="Left" Height="60" Margin="248,92,0,0" VerticalAlignment="Top" Width="337" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Employee ID" Binding="{Binding EmployeeID}" />
                 <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" />

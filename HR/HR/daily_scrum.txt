@@ -87,3 +87,24 @@ date and name
 -google
 -stackoverflow
 -I find everything really challenging; without the help of strong students it is really hard to figure it out.(most of them are busy)
+
+============================================================
+2017/10/11 Mojgan (wednesday)
+1. Done / not done
+-reinstalled the visual studio 2017
+-tried to fix the source tree
+-trello edited
+
+2. Will do in next 24 hours
+>>>testing the code if it works properly for the first tab(Employment information).
+>>>trying to get the search bar worked.
+>>>trying to import tables from database
+
+3. Where I need help?
+I need help to figure out what the next steps are.
+-google
+-I find everything really challenging; without the help of strong students
+ it is really hard to figure it out.(most of them are busy)
+
+
+
