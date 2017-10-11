@@ -4,47 +4,48 @@ date and name
 1. what have i done / not done sincce last scrum?
 2. what will i do from now until next scrum?
 3. where do i need help from my teammate, teacher, or internet?
-====================================================================================================
+
 
 2017/10/03 Mojgan (Tuesday)
 1. i worked on application overview and user Interface. 
-====================================================================================================
+
+
 
 2017/10/04 Mojgan (wednesday)
 1. Done / not done
 * partially done app overview and UI
 
 2. Will do in next 24 hours
->>>added 3 user story.
->>>>>review the proposal 
+-added 3 user story.
+-review the proposal 
 -adding screen shots of windows
 -make a summary
 -put user stories in Trello
 
->>>>>creating and editing windows(UI)
+!!creating and editing windows(UI)
 -working on graphics
 -make new tabs
 -edit existing tabs
 
 3. Where I need help? i asked hanna and Vajihe to fix my Xaml code.
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 2017/10/04 Lucas (wednesday)
 1. Look into how to create the database tables 
 * partially done it
 
 2. Will do in next 24 hours
 
->>>>>review the proposal 
+!!!review the proposal 
 
 -put user stories in Trello
 
->>>>>creating database tables and data dictionary
+*creating database tables and data dictionary
 -create primary keys and foreign keys 
 -figure out the relationships
 -figure out data types for each column
 
 3. Where I need help? a more general knowledge in database (need to look into it today).
-====================================================================================================
 
 
 2017/10/05 Mojgan (Thursday)
@@ -59,15 +60,13 @@ date and name
 3. Where I need help?
 -youtube videos for dynamic chart!
 -google
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 2017/10/05 Lucas (Thursday)
 1. Look into how to create the database tables 
 * Imagine account done.
 2. Data dictionary done.
 3. internet help
->>>>>>> 350a941868dd64808d102b48281b37591d6945f1
-
-========================================================================================================
 
 
 2017/10/10 Mojgan (Tuesday)
@@ -88,8 +87,6 @@ date and name
 -stackoverflow
 -I find everything really challenging; without the help of strong students it is really hard to figure it out.(most of them are busy)
 
-<<<<<<< HEAD
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 2017/10/11 Lucas (Wednesday)
 1. Done / not done
@@ -106,8 +103,8 @@ date and name
 -google
 -stackoverflow
 -This is very frustraiting for me; Im struggling with every step.
-=======
-============================================================
+
+
 2017/10/11 Mojgan (wednesday)
 1. Done / not done
 -reinstalled the visual studio 2017
@@ -125,6 +122,3 @@ I need help to figure out what the next steps are.
 -I find everything really challenging; without the help of strong students
  it is really hard to figure it out.(most of them are busy)
 
-
-
->>>>>>> 56f0b0f4b75d6724d58f4af6aab31c33f9a4cca9
