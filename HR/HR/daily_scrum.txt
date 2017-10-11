@@ -88,9 +88,10 @@ date and name
 -stackoverflow
 -I find everything really challenging; without the help of strong students it is really hard to figure it out.(most of them are busy)
 
+<<<<<<< HEAD
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-2017/10/10 Lucas (Wednesday)
+2017/10/11 Lucas (Wednesday)
 1. Done / not done
 -tried to create database.
 -added class Database and class Employee.
@@ -105,3 +106,25 @@ date and name
 -google
 -stackoverflow
 -This is very frustraiting for me; Im struggling with every step.
+=======
+============================================================
+2017/10/11 Mojgan (wednesday)
+1. Done / not done
+-reinstalled the visual studio 2017
+-tried to fix the source tree
+-trello edited
+
+2. Will do in next 24 hours
+>>>testing the code if it works properly for the first tab(Employment information).
+>>>trying to get the search bar worked.
+>>>trying to import tables from database
+
+3. Where I need help?
+I need help to figure out what the next steps are.
+-google
+-I find everything really challenging; without the help of strong students
+ it is really hard to figure it out.(most of them are busy)
+
+
+
+>>>>>>> 56f0b0f4b75d6724d58f4af6aab31c33f9a4cca9
