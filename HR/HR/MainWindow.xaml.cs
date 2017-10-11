@@ -23,21 +23,21 @@ namespace HR
     /// </summary>
     public partial class MainWindow : Window
     {
-        ////Database ProjectDatabase;
+        ProjectDatabase db;
 
-        ////public MainWindow()
-        ////{
-        ////    try
-        ////    {
-        ////        ProjectDatabase = new Database();
-        ////        InitializeComponent();
-        ////        ReloadEmployeeList();
-        ////    }
-        ////    catch (SqlException ex)
-        ////    {
-        ////        MessageBox.Show("Database error: " + ex.Message);
-        ////    }
-        ////}
+        public MainWindow()
+        {
+            try
+            {
+                db = new ProjectDatabase();
+                InitializeComponent();
+                ReloadEmployeeList();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+        }
 
 
 
@@ -50,15 +50,15 @@ namespace HR
         }
 
 
-        //private void ReloadPersonList()
-        //{
-        //    List<Employee> list = ProjectDatabase.GetAllEmployees();
-        //    lsvEmployee.Items.Clear();
-        //    foreach (Employee E in list)
-        //    {
-        //        lsvEmployee.Items.Add(E);
-        //    }
-        //}
+        private void ReloadEmployeeList()
+        {
+         List<Employee> list = db.GetAllEmployees();
+            lsvEmployee.Items.Clear();
+            foreach (Employee E in list)
+            {
+                lsvEmployee.Items.Add(E);
+            }
+        }
     }
 }
       
