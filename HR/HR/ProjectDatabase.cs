@@ -22,13 +22,13 @@ namespace HR
         public List<Employee> GetAllEmployees()
         {
             List<Employee> list = new List<Employee>();
-            SqlCommand selectCommand = new SqlCommand("SELECT * FROM People ORDER BY Id", conn);
+            SqlCommand selectCommand = new SqlCommand("SELECT * FROM Employee ORDER BY Id", conn);
             using (SqlDataReader reader = selectCommand.ExecuteReader())
             {
                 while (reader.Read())
                 {
                     Employee emp = new Employee();
-                    emp.Id = (int)reader[0];
+                    emp.Id = (long)reader[0];
                     emp.FullName = (String)reader[1];
                     emp.Department = (String)reader[2];
                     emp.BirthDate = (DateTime)reader[3];
