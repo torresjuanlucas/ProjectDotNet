@@ -70,12 +70,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DateTimePicker.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProjectDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
