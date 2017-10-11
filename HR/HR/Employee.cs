@@ -8,68 +8,134 @@ namespace HR
 {
     class Employee
     {
-        private string _name;
-        private int _age;
-        private double _height;
+        private long id;//{ get; set; }
+        private string fullName; // { get; set; }
+        private string department; // { get; set; }
+        private DateTime birthDate;//{ get; set; }
+        private string address;//{ get; set; }
+        private string postalCode;//{ get; set; }
+        private string phone;//{ get; set; }
+        private string jobTitle;//{ get; set; }
 
-        public int Id { get; set; }
-        public string Name
+
+
+        public long Id
         {
-            get { return _name; }
-            set
+            get
             {
-                if (value.Length < 2 || value.Length > 50)
-                {
-                    throw new ArgumentOutOfRangeException("Name must be between 2 and 50 characters long");
-                }
-                _name = value;
+                return id;
             }
-        }
-        public int Age
-        {
-            get { return _age; }
             set
             {
-                if (value < 1 || value > 150)
-                {
-                    throw new ArgumentOutOfRangeException("Age must be between 1 and 150");
-                }
-                _age = value;
+                id = value;
             }
-        }
-        public string AgeStr
+        } 
+
+        public string FullName
         {
+            get
+            {
+                return fullName;
+            }
             set
             {
-                int ageTemp;
-                if (int.TryParse(value, out ageTemp))
+                if ((value.Length > 2) && (value.Length < 50))
                 {
-                    Age = ageTemp;
-                }
-                else
-                {
-                    throw new ArgumentOutOfRangeException("Age must be an integer value");
+                    fullName = value;
                 }
             }
         }
 
-
-        public double Height
+        public string Department
         {
-            get { return _height; }
+            get
+            {
+                return department;
+            }
             set
             {
-                if (value < 0.3 || value > 3)
-                {
-                    throw new ArgumentOutOfRangeException("Height must be between 0.3 and 3.0 meters");
-                }
-                _height = value;
+
+             department = value;
+  
             }
         }
 
-        public override String ToString()
+        public DateTime BirthDate
         {
-            return String.Format("{0}: {1} is {2} y/o, {3:F2}m tall", Id, Name, Age, Height);
+            get
+            {
+                return birthDate;
+            }
+            set
+            {
+                
+             birthDate = value;
+   
+            }
+        }
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                if ((value.Length > 2) && (value.Length < 150))
+                {
+                    address = value;
+                }
+            }
+        }
+
+        public string PostalCode
+        {
+            get
+            {
+                return postalCode;
+            }
+            set
+            {
+                if ((value.Length > 2) && (value.Length < 150))
+                {
+                    postalCode = value;
+                }
+            }
+        }
+
+        public string Phone
+        {
+            get
+            {
+                return phone;
+            }
+            set
+            {
+
+                phone = value;
+
+            }
+        }
+
+        public string JobTitle
+        {
+            get
+            {
+                return jobTitle;
+            }
+            set
+            {
+  
+            jobTitle = value;
+                
+            }
+        }
+
+
+
+        public override string ToString()
+        {
+            return String.Format("{0}: full name{1}, dept:{2}, birthdate: {3}, address:{4}, postalcode:{5}", Id, FullName, Department, BirthDate, Address, PostalCode);
         }
     }
 }
