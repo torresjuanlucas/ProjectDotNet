@@ -135,7 +135,7 @@ namespace HR
 
         public override string ToString()
         {
-            return String.Format("{0}: full name{1}, dept:{2}, birthdate: {3}, address:{4}, postalcode:{5}", Id, FullName, Department, BirthDate, Address, PostalCode);
+            return String.Format("{0}: fullName{1}, dept:{2}, birthdate: {3}, address:{4}, postalCode:{5}, phone:{6}, JobTitle:{7}", Id, FullName, Department, BirthDate, Address, PostalCode, phone, JobTitle);
         }
     }
 }

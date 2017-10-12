@@ -26,160 +26,31 @@ namespace HR
         {
             InitializeComponent();
         }
-        
-        //// ========================Add button====================
 
-        //private void btnAddNew_Click(object sender, RoutedEventArgs e)
-
-        //{
-
-        //    //SqlConnection con = new SqlConnection(@"Server=tcp:lucastorres.database.windows.net,1433;Initial Catalog=hrproject;Persist Security Info=False;User ID={lucastorres};Password={LucasLucas1};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-        //    //con.Open();
-
-        //    FullName = tbFullName.Text;
-
-        //    //verify full name
-        //    if (FullName.Length < 2 || FullName.Length > 50)
-        //    {
-        //        MessageBox.Show("Name must be between 2 and 50  characters long", "Error Input");
-        //        return;
-        //    }
-        //    if (FullName.IndexOf(';') != -1)
-        //    {
-        //        MessageBox.Show("Name Can't contains ';'", "Error Input");
-        //        return;
-        //    }
-
-
-
-        //    //birth date
-        //    //string theDate = DatePicker1.String("yyyy-MM-dd");
-        //    DateTimePicker DatePicker1 = new DateTimePicker();
-
-        //    MessageBox.Show(DatePicker1.Value.ToString());
-
-        //    //Gender
-        //    String gender = (rbMale.IsChecked == true ? "Male" : (rbFemale.IsChecked == true ? "Female" : "N/A"));
-
-
-
-        //    //phone
-        //    String phone = tbPhone.Text;
-
-
-        //    //Address
-        //    String Address = tbAddress.Text;
-
-        //    //JobTitleCode
-        //    String JobTitle = tbJobTitleCode.Text;
-
-
-        //    //PostalCode
-        //    String PostalCode = tbPostalCode.Text;
-
-
-
-        //    try
-        //    {
-        //        string sql = "INSERT INTO Employees (FullName, Department, Address, postalCode, phone, gender, jobTitle) VALUES "
-        //    + " (@FullName,@Department,@Address,@postalCode,@phone,@gender,@jobTitle)";
-
-
-
-        //        Employee E = new Employee { FullName = FullName, Department = Department, BirthDate = BirthDate, Address = Address, JobTitle = JobTitle, PostalCode = PostalCode, Phone = Phone, };
-        //        db.AddEmployee(E);
-        //        ReloadEmployeeList();
-        //    }
-        //    catch (ArgumentOutOfRangeException ex)
-        //    {
-        //        MessageBox.Show("Input error: " + ex.Message);
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        MessageBox.Show("Database error: " + ex.Message);
-        //    }
-
-        //}
-        //    //
-
-        //    //    SqlCommand cmd = new SqlCommand(sql, conn);
-        //    //    cmd.ExecuteNonQuery();
-
-        //    //    string str1 = "select max(emp_id) from employee ;";
-
-        //    //    SqlCommand cmd1 = new SqlCommand(str1, conn);
-        //    //    SqlDataReader dr = cmd1.ExecuteReader();
-        //    //    if (dr.Read())
-        //    //    {
-        //    //        MessageBox.Show("" + tbFullName.Text + "'s Details is Inserted Successfully.. " + cmbDepartment.Text + "'s Id is " + dr.GetInt32(0) + ".", "Important Message");
-        //    //        this.Hide();
-
-        //    //    }
-        //    //    this.Close();
-        //    //}
-        //    //catch (SqlException excep)
-        //    //{
-        //    //    MessageBox.Show(excep.Message);
-        //    //}
-        //    //conn.Close();
-
-
-
-        //    //    =========================Edit(modify) button=============================
-
-
-        //    //    private void btnEdit_Click(object sender, RoutedEventArgs e)
-        //    //{
-        //    //    SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=c:\users\n\documents\visual studio 2010\Projects\EmployeeInformationSystem\EmployeeInformationSystem\Company.mdf;Integrated Security=True;User Instance=True");
-        //    //    con.Open();
-        //    //    try
-        //    //    {
-        //    //        string str = " Update employee set name='" + tbFullName.Text + "',phone='" + tbPhone.Text + "',jobTitle='" + tbJobTitleCode.Text + "',address='" + tbAddress.Text + "',='" + BirthDate.Date + "',department='" + cmbDepartment.Text + "'";
-
-        //    //        SqlCommand cmd = new SqlCommand(str, conn);
-        //    //        cmd.ExecuteNonQuery();
-
-        //    //        string str1 = "select max(emp_id) from employee ;";
-
-        //    //        SqlCommand cmd1 = new SqlCommand(str1, conn);
-        //    //        SqlDataReader dr = cmd1.ExecuteReader();
-        //    //        if (dr.Read())
-        //    //        {
-        //    //            MessageBox.Show("" + tbFullName.Text + "'s Details is Updated Successfully.. ", "Important Message");
-        //    //            this.Hide();
-
-        //    //        }
-        //    //        this.Close();
-        //    //    }
-        //    //    catch (SqlException excep)
-        //    //    {
-        //    //        MessageBox.Show(excep.Message);
-        //    //    }
-        //    //    con.Close();
-
-        //    //}
-
-
-
-        //    //// =========================== Clear the Form button=============================
-
-        //    private void btnClear_Click(object sender, RoutedEventArgs e)
-        //    {
-
-        //        cmbDepartment.SelectedIndex = -1;
-        //        rbFemale.IsChecked = false;
-        //        rbMale.IsChecked = false;
-        //        rbNA.IsChecked = false;
-        //        tbFullName.Text = "";
-        //        tbPhone.Text = "";
-        //        cmbDepartment.Text = "";
-        //        tbAddress.Text = "";
-        //        tbPostalCode.Text = "";
-        //        tbJobTitleCode.Text = "";
-
-        //    }
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            Employee emp = new Employee();
+            emp.FullName = tbFullName.Text;
+            emp.Department = cmbDepartment.Text;
+            emp.BirthDate = DateTime.Parse(DatePicker1.Text);
+            emp.Address = tbAddress.Text;
+            emp.PostalCode = tbPostalCode.Text;
+            emp.JobTitle = tbJobTitleCode.Text;
+            emp.Phone = tbPhone.Text;
+            db.AddEmployee(emp);
+            MessageBox.Show("Employee has been added succefully!");
 
         }
+
+
+
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();          
+
+        }
+    }
     }
        
     

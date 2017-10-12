@@ -21,15 +21,15 @@
                     <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp"  >
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Name}"/>
-                                <GridViewColumn Header="Full Name" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Birth Date" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Gender" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Postal Code" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Phone" DisplayMemberBinding="{Binding Path=Value}"/>
-                                <GridViewColumn Header="Job Title" DisplayMemberBinding="{Binding Path=Value}"/>
+                                <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Id}"/>
+                                <GridViewColumn Header="Full Name" DisplayMemberBinding="{Binding Path=FullName}"/>
+                                <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Path=Department}"/>
+                                <GridViewColumn Header="Birth Date" DisplayMemberBinding="{Binding Path=BirthDate}"/>
+
+                                <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Path=Address}"/>
+                                <GridViewColumn Header="Postal Code" DisplayMemberBinding="{Binding Path=PostalCode}"/>
+                                <GridViewColumn Header="Phone" DisplayMemberBinding="{Binding Path=Phone}"/>
+                                <GridViewColumn Header="Job Title" DisplayMemberBinding="{Binding Path=JobTitle}"/>
                             </GridView>
                         </ListView.View>
 
@@ -37,7 +37,8 @@
 
 
                     <Button Name ="Update" Content="Update" Height="49" Margin="299,299,306,10" Click="Update_Click" />
-                    <Button Name="Add" Content="Add" Height="49" Margin="103,299,502,10" Click="Add_Click"/>
+                    <Button Name="Add" Content="Add" Height="49" Margin="163,299,442,10" Click="Add_Click"/>
+                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="435,299,170,10" Click="Add_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Payment" HorizontalAlignment="Right" Width="241" RenderTransformOrigin="0.248,0.409" Background="#FF4F4A4A" Foreground="#FFFF8000" BorderBrush="#FF4F4A4A" FontWeight="Bold" Height="20" VerticalAlignment="Bottom" Margin="0,-2,-12,2">

@@ -48,7 +48,7 @@ namespace HR
         public void UpdateEmployee(Employee emp)
         {
 
-            string sql = "UPDATE Employee SET LastName=@LastName, FirstName=@FirstName , HireDate=@HireDate , Address=@Address , Phone=@Phone, Photo=@Photo, UserName=@UserName , Password=@Password  WHERE @Id = Id";
+            string sql = "UPDATE Employee SET fullName=@fullName, department=@department , birthDate=@birthDate , address=@address , Phone=@Phone, postalCode=@postalCode, jobTitle=@jobTitle  WHERE @Id = Id";
             SqlCommand updateCommand = new SqlCommand(sql, conn);
             updateCommand.Parameters.AddWithValue("@fullName", emp.FullName);
             updateCommand.Parameters.AddWithValue("@department", emp.Department);
@@ -98,7 +98,7 @@ namespace HR
                     emp.Id = Convert.ToInt32(reader["Id"].ToString());
                     emp.FullName = reader["FullName"].ToString();
                     emp.Department = reader["Department"].ToString();
-                    emp.BirthDate = (DateTime)reader["HireDate"];
+                    emp.BirthDate = (DateTime)reader["BirthDate"];
                     emp.Address = reader["Address"].ToString();
                     emp.PostalCode = reader["PostalCode"].ToString();
                     emp.Phone = reader["Phone"].ToString();

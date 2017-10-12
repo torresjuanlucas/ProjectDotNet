@@ -80,20 +80,7 @@ namespace HR
             cm.IsOpen = true;
         }
 
-        //private void lsvPeople_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        //{
-        //    List<Employee> Employees = new List<Employee>();
-        //    if (lsvEmployee.SelectedIndex != -1)
-        //    {
-        //        tbFullName.Text = Employees.ElementAt(lsvEmployee.SelectedIndex).FullName;
-        //        tbAge.Text = Employees.ElementAt(lsvEmployee.SelectedIndex).Age.ToString();
-        //        sliderHeight.Value = Convert.ToInt64(Employees.ElementAt(lsvEmployee.SelectedIndex).Height);
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("You must choose an Item. Just Cicking with out choosing does not work!", "My App", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //    }
-
+       
 
         private void MenuItemDelete_Click(object sender, RoutedEventArgs e)
         {
