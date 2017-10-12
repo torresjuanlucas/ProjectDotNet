@@ -122,3 +122,21 @@ I need help to figure out what the next steps are.
 -I find everything really challenging; without the help of strong students
  it is really hard to figure it out.(most of them are busy)
 
+
+
+
+
+2017/10/12 Mojgan (Thursday)
+1. Done / not done
+-created add edit employee window
+-created tab with list view of employees
+-trello edited
+
+2. Will do in next 24 hours
+-Load employees into list when window shows
+-On Add button press show AddEditEmployee window and use db.AddEmployee()  to create new record
+
+
+3. Where I need help?
+-google
+
