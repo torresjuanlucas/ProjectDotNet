@@ -123,6 +123,25 @@ I need help to figure out what the next steps are.
  it is really hard to figure it out.(most of them are busy)
 
 
+
+
+
+
+2017/10/12 Mojgan (Thursday)
+1. Done / not done
+-created add edit employee window
+-created tab with list view of employees
+-trello edited
+
+2. Will do in next 24 hours
+-Load employees into list when window shows
+-On Add button press show AddEditEmployee window and use db.AddEmployee()  to create new record
+
+
+3. Where I need help?
+-google
+=======
+
 2017/10/12 Lucas (Thursday)
 1. Done / not done
 added class Database and class Employee (don't know if done right).
@@ -133,5 +152,6 @@ keep working on the Employee class
 3. Where I need help?
 try to finish properly the ProjectDatabase class and the Employee class.
 the pushstart from Gregory was very helpful, before we tried to do too many things at the same time and ended up doing nothing instead. 
+
 
 

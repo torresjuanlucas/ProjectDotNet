@@ -40,7 +40,7 @@
             <Button   Name="btnClear" Content="Clear" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,268,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" />
             <Label  Name="lblJobTitleCode" Content="Job Title" Height="24" Margin="4,279,63,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
             <TextBox  Name="tbJobTitleCode" HorizontalAlignment="Left" Height="24" Margin="70,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
-            <Button  Name="btnAddNew" Content="Add New" Grid.Column="3" HorizontalAlignment="Left" Height="39" Margin="211,126,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF"  />
+            <Button  Name="btnAddNew" Content="Add New" Grid.Column="3" HorizontalAlignment="Left" Height="39" Margin="211,126,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" Click="btnAddNew_Click_1"  />
             <Grid  Margin="0,0,162,0"  Grid.Column="3" >
                 <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-58,104,0,0" VerticalAlignment="Top" Width="220">
                     <ComboBoxItem   Name="Marketing">Marketing</ComboBoxItem>

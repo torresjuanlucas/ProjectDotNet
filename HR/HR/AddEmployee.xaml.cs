@@ -20,23 +20,15 @@ namespace HR
     /// </summary>
     public partial class AddEmployee : Window
     {
+        ProjectDatabase db = new ProjectDatabase();
+
         public AddEmployee()
         {
             InitializeComponent();
         }
+        
 
 
-
-        string FullName;
-        string Department;
-        DateTime BirthDate;
-        string Address;
-        string PostalCode;
-        string Phone;
-
-        string JobTitle;
-
-        private object datePicker1;
 
 
         // ========================Add button====================
@@ -91,34 +83,50 @@ namespace HR
 
 
 
-            //try
-            //{
-            //    string sql = "INSERT INTO Employees (FullName, Department, Address, postalCode, phone, gender, jobTitle) VALUES "
-            //+ " (@FullName,@Department,@Address,@postalCode,@phone,@gender,@jobTitle)";
+            try
+            {
+                string sql = "INSERT INTO Employees (FullName, Department, Address, postalCode, phone, gender, jobTitle) VALUES "
+            + " (@FullName,@Department,@Address,@postalCode,@phone,@gender,@jobTitle)";
 
 
 
-            //     SqlCommand cmd = new SqlCommand(sql, conn);
-            //     cmd.ExecuteNonQuery();
+                Employee E = new Employee { FullName = FullName, Department = Department, BirthDate = BirthDate, Address = Address, JobTitle = JobTitle, PostalCode = PostalCode, Phone = Phone, };
+                db.AddEmployee(E);
+                ReloadEmployeeList();
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                MessageBox.Show("Input error: " + ex.Message);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
 
-            //     string str1 = "select max(emp_id) from employee ;";
+        }
+            //
 
-            //     SqlCommand cmd1 = new SqlCommand(str1, conn);
-            //     SqlDataReader dr = cmd1.ExecuteReader();
-            //     if (dr.Read())
-            //     {
-            //         MessageBox.Show("" + tbFullName.Text + "'s Details is Inserted Successfully.. " + cmbDepartment.Text + "'s Id is " + dr.GetInt32(0) + ".", "Important Message");
-            //         this.Hide();
+            //    SqlCommand cmd = new SqlCommand(sql, conn);
+            //    cmd.ExecuteNonQuery();
 
-            //     }
-            //     this.Close();
-            // }
-            // catch (SqlException excep)
-            // {
-            //     MessageBox.Show(excep.Message);
-            // }
-            //// conn.Close();
+            //    string str1 = "select max(emp_id) from employee ;";
+
+            //    SqlCommand cmd1 = new SqlCommand(str1, conn);
+            //    SqlDataReader dr = cmd1.ExecuteReader();
+            //    if (dr.Read())
+            //    {
+            //        MessageBox.Show("" + tbFullName.Text + "'s Details is Inserted Successfully.. " + cmbDepartment.Text + "'s Id is " + dr.GetInt32(0) + ".", "Important Message");
+            //        this.Hide();
+
+            //    }
+            //    this.Close();
             //}
+            //catch (SqlException excep)
+            //{
+            //    MessageBox.Show(excep.Message);
+            //}
+            //conn.Close();
+
 
 
             //    =========================Edit(modify) button=============================
@@ -159,23 +167,25 @@ namespace HR
 
             //// =========================== Clear the Form button=============================
 
-            //private void btnClear_Click(object sender, RoutedEventArgs e)
-            //{
+            private void btnClear_Click(object sender, RoutedEventArgs e)
+            {
 
-            //    cmbDepartment.SelectedIndex = -1;
-            //    rbFemale.IsChecked = false;
-            //    rbMale.IsChecked = false;
-            //    rbNA.IsChecked = false;
-            //    tbFullName.Text = "";
-            //    tbPhone.Text = "";
-            //    cmbDepartment.Text = "";
-            //    tbAddress.Text = "";
-            //    tbPostalCode.Text = "";
-            //    tbJobTitleCode.Text = "";
+                cmbDepartment.SelectedIndex = -1;
+                rbFemale.IsChecked = false;
+                rbMale.IsChecked = false;
+                rbNA.IsChecked = false;
+                tbFullName.Text = "";
+                tbPhone.Text = "";
+                cmbDepartment.Text = "";
+                tbAddress.Text = "";
+                tbPostalCode.Text = "";
+                tbJobTitleCode.Text = "";
 
-            //}
+            }
 
         }
-        }
-        }
+    }
+       
+    
+       
 
