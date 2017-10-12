@@ -8,7 +8,7 @@ namespace HR
 {
     class Employee
     {
-        private long id;//{ get; set; }
+        private int id;//{ get; set; }
         private string fullName; // { get; set; }
         private string department; // { get; set; }
         private DateTime birthDate;//{ get; set; }
@@ -18,8 +18,8 @@ namespace HR
         private string jobTitle;//{ get; set; }
 
 
-
-        public long Id
+        
+        public int Id
         {
             get
             {

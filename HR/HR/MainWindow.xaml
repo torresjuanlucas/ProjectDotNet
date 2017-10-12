@@ -18,7 +18,7 @@
             <TabItem Header="Employee" Margin="-2,-2,-123,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="250">
 
                 <Grid>
-                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp" MouseLeftButtonUp="lsvEmployee_MouseLeftButtonUp" >
+                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp"  >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Name}"/>
