@@ -44,27 +44,35 @@ namespace HR
             return list;
         }
 
-        public void AddEmployee(String name, int age, double height)
+        public void AddEmployee(String fullName, String department, DateTime birthDate, String address, String postalCode, String phone, String jobTitle)
         {
-            SqlCommand insertCommand = new SqlCommand("INSERT INTO Employee (Name,Age,Height) VALUES (@Name,@Age,@Height)", conn);
-            insertCommand.Parameters.Add(new SqlParameter("Name", name));
-            insertCommand.Parameters.Add(new SqlParameter("Age", age));
-            insertCommand.Parameters.Add(new SqlParameter("Height", height));
+            SqlCommand insertCommand = new SqlCommand("INSERT INTO Employee (FullName,Department,BirthDate, Address, PostalCode, Phone, JobTitle) VALUES (@FullName,@Department,@BirthDate,@Address,@PostalCode,@Phone,@JobTitle)", conn);
+            insertCommand.Parameters.Add(new SqlParameter("FullName", fullName));
+            insertCommand.Parameters.Add(new SqlParameter("Department", department));
+            insertCommand.Parameters.Add(new SqlParameter("BirthDate", birthDate));
+            insertCommand.Parameters.Add(new SqlParameter("Address", address));
+            insertCommand.Parameters.Add(new SqlParameter("PostalCode", postalCode));
+            insertCommand.Parameters.Add(new SqlParameter("Phone", phone));
+            insertCommand.Parameters.Add(new SqlParameter("JobTitle", jobTitle));
             insertCommand.ExecuteNonQuery();
         }
         public void DeleteEmployee(long id)
         {
             SqlCommand insertCommand = new SqlCommand("DELETE FROM Employee WHERE Id = @id", conn);
-            insertCommand.Parameters.Add(new SqlParameter("id", id));
+            insertCommand.Parameters.Add(new SqlParameter("Id", id));
             insertCommand.ExecuteNonQuery();
         }
-        public void UpdateEmployee(String name, int age, double height, long id)
+        public void UpdateEmployee(long id, String fullName, String department, DateTime birthDate, String address, String postalCode, String phone, String jobTitle)
         {
-            SqlCommand insertCommand = new SqlCommand("Update Employee Set Name=@name, Age=@age ,Height=@height Where id=@id", conn);
-            insertCommand.Parameters.Add(new SqlParameter("Name", name));
-            insertCommand.Parameters.Add(new SqlParameter("Age", age));
-            insertCommand.Parameters.Add(new SqlParameter("Height", height));
+            SqlCommand insertCommand = new SqlCommand("Update Employee Set FullName=@name, Department=@department ,BirthDate=@birthDate, Address=@address, PostalCode=@postalCode, Phone=@phone, JobTitle=@jobTitle Where Id=@id", conn);
             insertCommand.Parameters.Add(new SqlParameter("Id", id));
+            insertCommand.Parameters.Add(new SqlParameter("FullName", fullName));
+            insertCommand.Parameters.Add(new SqlParameter("Department", department));
+            insertCommand.Parameters.Add(new SqlParameter("BirthDate", birthDate));
+            insertCommand.Parameters.Add(new SqlParameter("Address", address));
+            insertCommand.Parameters.Add(new SqlParameter("PostalCode", postalCode));
+            insertCommand.Parameters.Add(new SqlParameter("Phone", phone));
+            insertCommand.Parameters.Add(new SqlParameter("JobTitle", jobTitle));
             insertCommand.ExecuteNonQuery();
         }
 
