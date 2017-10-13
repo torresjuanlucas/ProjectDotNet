@@ -11,6 +11,7 @@ namespace HR
     {
         private string connString = @"Data Source = lucastorres.database.windows.net; Initial Catalog = hrproject; Persist Security Info=True;User ID = sqladmin; Password=LucasLucas1";
         
+
         private SqlConnection conn;
 
         public ProjectDatabase()
