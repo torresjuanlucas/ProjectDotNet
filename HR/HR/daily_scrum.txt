@@ -155,3 +155,17 @@ the pushstart from Gregory was very helpful, before we tried to do too many thin
 
 
 
+2017/10/13 Lucas (Friday)
+1. Done / not done
+tried to figure out how to implement 2 other tables
+2. Will do in next 24 hours
+keep working on the two tables
+keep working on the ProjectDatabase class
+
+3. Where I need help?
+I need help to organize the project's steps.
+
+
+
+
+
