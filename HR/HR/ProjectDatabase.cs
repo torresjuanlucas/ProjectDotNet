@@ -20,6 +20,9 @@ namespace HR
             conn.ConnectionString = connString;
             conn.Open();
         }
+
+
+        //Employee table 
        
         Employee emp;
         public void AddEmployee(Employee emp)
@@ -57,7 +60,7 @@ namespace HR
             updateCommand.Parameters.AddWithValue("@address", emp.Address);
             updateCommand.Parameters.AddWithValue("@postalCode", emp.PostalCode);
             updateCommand.Parameters.AddWithValue("@phone", emp.Phone);
-            updateCommand.Parameters.AddWithValue("@jobTitle", emp.JobTitle);            
+            updateCommand.Parameters.AddWithValue("@jobTitle", emp.JobTitle);
             updateCommand.ExecuteNonQuery();
         }
         public Employee GetEmployeeById(int id)
@@ -113,64 +116,55 @@ namespace HR
 
 
 
+        //Payment
+        public void AddPayment(Payment pay)
+        {
 
-        // End Employee section 
-    //    public List<Employee> GetAllEmployees()
-    //    {
-    //        List<Employee> list = new List<Employee>();
-    //        SqlCommand selectCommand = new SqlCommand("SELECT * FROM Employee ORDER BY Id", conn);
-    //        using (SqlDataReader reader = selectCommand.ExecuteReader())
-    //        {
-    //            while (reader.Read())
-    //            {
-    //                Employee emp = new Employee();
-    //                emp.Id = (long)reader[0];
-    //                emp.FullName = (String)reader[1];
-    //                emp.Department = (String)reader[2];
-    //                emp.BirthDate = (DateTime)reader[3];
-    //                emp.Address = (String)reader[4];
-    //                emp.PostalCode = (String)reader[5];
-    //                emp.Phone = (String)reader[6];
-    //                emp.JobTitle = (String)reader[7];
+            string sql = "INSERT INTO Payment ( id, hourlyRate, hours, netPay) VALUES "
+                        + " (@id,@hourlyRate,@hours,@netPay)";
+            SqlCommand insertCommand = new SqlCommand(sql, conn);
+           
+            insertCommand.Parameters.Add(new SqlParameter("@id", pay.Id));
+            insertCommand.Parameters.Add(new SqlParameter("@hourlyRate", pay.HourlyRate));
+            insertCommand.Parameters.Add(new SqlParameter("@hours", pay.Hours));
+            insertCommand.Parameters.Add(new SqlParameter("@netPay", pay.NetPay));
+      
+            insertCommand.ExecuteNonQuery();
+        }
 
 
-    //                list.Add(emp);
-    //            }
-    //        }
-    //        return list;
-    //    }
 
-    //    public void AddEmployee(String fullName, String department, DateTime birthDate, String address, String postalCode, String phone, String jobTitle)
-    //    {
-    //        SqlCommand insertCommand = new SqlCommand("INSERT INTO Employee (FullName,Department,BirthDate, Address, PostalCode, Phone, JobTitle) VALUES (@FullName,@Department,@BirthDate,@Address,@PostalCode,@Phone,@JobTitle)", conn);
-    //        insertCommand.Parameters.Add(new SqlParameter("FullName", fullName));
-    //        insertCommand.Parameters.Add(new SqlParameter("Department", department));
-    //        insertCommand.Parameters.Add(new SqlParameter("BirthDate", birthDate));
-    //        insertCommand.Parameters.Add(new SqlParameter("Address", address));
-    //        insertCommand.Parameters.Add(new SqlParameter("PostalCode", postalCode));
-    //        insertCommand.Parameters.Add(new SqlParameter("Phone", phone));
-    //        insertCommand.Parameters.Add(new SqlParameter("JobTitle", jobTitle));
-    //        insertCommand.ExecuteNonQuery();
-    //    }
-    //    public void DeleteEmployee(long id)
-    //    {
-    //        SqlCommand insertCommand = new SqlCommand("DELETE FROM Employee WHERE Id = @id", conn);
-    //        insertCommand.Parameters.Add(new SqlParameter("Id", id));
-    //        insertCommand.ExecuteNonQuery();
-    //    }
-    //    public void UpdateEmployee(long id, String fullName, String department, DateTime birthDate, String address, String postalCode, String phone, String jobTitle)
-    //    {
-    //        SqlCommand insertCommand = new SqlCommand("Update Employee Set FullName=@name, Department=@department ,BirthDate=@birthDate, Address=@address, PostalCode=@postalCode, Phone=@phone, JobTitle=@jobTitle Where Id=@id", conn);
-    //        insertCommand.Parameters.Add(new SqlParameter("Id", id));
-    //        insertCommand.Parameters.Add(new SqlParameter("FullName", fullName));
-    //        insertCommand.Parameters.Add(new SqlParameter("Department", department));
-    //        insertCommand.Parameters.Add(new SqlParameter("BirthDate", birthDate));
-    //        insertCommand.Parameters.Add(new SqlParameter("Address", address));
-    //        insertCommand.Parameters.Add(new SqlParameter("PostalCode", postalCode));
-    //        insertCommand.Parameters.Add(new SqlParameter("Phone", phone));
-    //        insertCommand.Parameters.Add(new SqlParameter("JobTitle", jobTitle));
-    //        insertCommand.ExecuteNonQuery();
-    //    }
 
+        //Add PAyment --get information for Add payment dialogue
+
+        //public Payment GetPaymentById(int id)
+        //{
+
+        //    string sqlDelete = "SELECT * FROM Payment WHERE Id = @Id;";
+        //    SqlCommand Command = new SqlCommand(sqlDelete, conn);
+        //    Command.Parameters.AddWithValue("@Id", id);
+        //    using (var reader = Command.ExecuteReader())
+        //    {
+        //        if (reader.Read())
+        //        {
+
+
+
+     
+        //pay = new Payment
+        //            {
+        //    PaymentId = (int)reader["paymentId"],
+        //    Id = (int)reader["id"],
+        //    HourlyRate = decimal.Parse(reader["hourlyRate"].ToString()),
+        //    Hours = reader["hours"].ToString(),
+        //    NetPay = decimal.Parse(reader["netPay"].ToString()),
+                     
+        //            };
+        //        }
+
+        //    }
+
+        //    return pay;
+        //}
     }
 }

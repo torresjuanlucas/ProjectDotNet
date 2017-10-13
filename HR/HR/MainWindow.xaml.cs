@@ -43,15 +43,15 @@ namespace HR
         private void Update_Click(object sender, RoutedEventArgs e)
         {
             UpdateEmployee win2 = new UpdateEmployee();
-            win2.Show();
-            this.Close();
+            win2.ShowDialog();
+          //  this.Close();
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             AddEmployee win2 = new AddEmployee();
-            win2.Show();
-            this.Close();
+            win2.ShowDialog();
+           // this.Close();
         }
 
         
@@ -84,21 +84,31 @@ namespace HR
 
         private void MenuItemDelete_Click(object sender, RoutedEventArgs e)
         {
-            List<Employee> Persons = new List<Employee>();
+            List<Employee> list = new List<Employee>();
 
             if (lsvEmployee.SelectedIndex < 0 )
             {
                 MessageBox.Show("You must add some data First then try to delete one!", "My App", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            Persons.RemoveAt(lsvEmployee.SelectedIndex);
+            list.RemoveAt(lsvEmployee.SelectedIndex);
             lsvEmployee.Items.Refresh();
         }
 
-       
+        private void AddPayment_Click(object sender, RoutedEventArgs e)
+        {
+            Employee employeeinfo = (Employee) lsvEmployee.SelectedItem;
 
-       
-    
+
+            AddPayment Paymentinfo = new AddPayment();
+
+            Paymentinfo.tbEmployeeID.Text = employeeinfo.Id.ToString();
+            Paymentinfo.tbFullNamePay.Text = employeeinfo.FullName;
+
+            Paymentinfo.ShowDialog();
+      
+        }
+
     }
 }
       
