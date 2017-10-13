@@ -14,11 +14,15 @@
     </Window.Resources>
     <Grid Margin="0,6,-1,-27">
 
-        <TabControl HorizontalAlignment="Left" Height="386" Margin="34,192,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A" >
+        <TabControl HorizontalAlignment="Left" Height="386" Margin="34,192,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A"  >
             <TabItem Header="Employee" Margin="-2,-2,-123,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="250">
 
                 <Grid>
-                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="409*"/>
+                        <ColumnDefinition Width="327*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp" Grid.ColumnSpan="2"  >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Id}"/>
@@ -36,9 +40,10 @@
                     </ListView>
 
 
-                    <Button Name ="Update" Content="Update" Height="49" Margin="299,299,306,10" Click="Update_Click" />
-                    <Button Name="Add" Content="Add" Height="49" Margin="163,299,442,10" Click="Add_Click"/>
-                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="435,299,170,10" Click="Add_Click"/>
+                    <Button Name ="Update" Content="Update" Height="49" Margin="299,299,306,10" Click="Update_Click" Grid.ColumnSpan="2" />
+                    <Button Name="Add" Content="Add" Height="49" Margin="163,299,115,10" Click="Add_Click"/>
+                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="26,299,170,10" Click="Add_Click" Grid.Column="1"/>
+                    <Button x:Name="Add_Copy1" Content="add Payment&#xA;" Height="49" Margin="162,299,34,10" Click="AddPayment_Click" Grid.Column="1"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Payment" HorizontalAlignment="Right" Width="241" RenderTransformOrigin="0.248,0.409" Background="#FF4F4A4A" Foreground="#FFFF8000" BorderBrush="#FF4F4A4A" FontWeight="Bold" Height="20" VerticalAlignment="Bottom" Margin="0,-2,-12,2">
