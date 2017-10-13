@@ -155,6 +155,24 @@ the pushstart from Gregory was very helpful, before we tried to do too many thin
 
 
 
+
+
+
+2017/10/13 Mojgan (Friday)
+1. Done / not done
+
+-coded the AddEmployee window to get the user data 
+-the user input is loaded as a record to the listview on the main window
+
+2. Will do in next 24 hours
+-getting update window working 
+-save record to be shown in database
+-trying to code the second tab(Payment)
+
+3. Where I need help?
+-Mohammad Hadi helped us with the correction of the database.cs code and the user Interface modifications. 
+
+
 2017/10/13 Lucas (Friday)
 1. Done / not done
 tried to figure out how to implement 2 other tables
