@@ -13,7 +13,7 @@
         </ContextMenu>
     </Window.Resources>
 
-    <Grid Margin="0,6,2,-2">
+    <Grid Margin="0,10,2,-5">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="104*"/>
@@ -51,10 +51,10 @@
                     <Button Name ="Update" Content="Update" Height="49" Margin="197,296,58,13" Click="Update_Click" />
                     <Button Name="Add" Content="Add" Height="49" Margin="16,296,239,13" Click="Add_Click"/>
                     <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="380,296,202,13" Click="Add_Click" Grid.ColumnSpan="2"/>
-                    <Button x:Name="Add_Copy1" Content="&#xD;&#xA;add Payment&#xA;" Height="49" Margin="154,296,19,13" Click="AddPayment_Click" Grid.Column="1"/>
+                    <Button x:Name="Add_Copy1" Content="&#xA;Add Payment&#xA;" Height="49" Margin="154,296,19,13" Click="AddPayment_Click" Grid.Column="1" />
                 </Grid>
             </TabItem>
-            <TabItem Header="Report" Margin="0,-3,-8,1" HorizontalAlignment="Right" Width="348" Foreground="#FF23FF00" Background="#FF4F4A4A" BorderBrush="#FF4F4A4A" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <TabItem Header="Report" Margin="0,-3,-24,1" HorizontalAlignment="Right" Width="348" Foreground="#FF23FF00" Background="#FF4F4A4A" BorderBrush="#FF4F4A4A" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
                 <TabItem.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>

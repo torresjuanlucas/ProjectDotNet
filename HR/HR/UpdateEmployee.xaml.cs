@@ -19,9 +19,23 @@ namespace HR
     /// </summary>
     public partial class UpdateEmployee : Window
     {
-        public UpdateEmployee()
+        Employee employeeinfo;
+        MainWindow parentWindow;
+
+        public UpdateEmployee(MainWindow parent, Employee toEditEmp)
         {
+            parentWindow = parent;
+            employeeinfo = toEditEmp;
             InitializeComponent();
+            
+            tbFullName.Text = employeeinfo.FullName.ToString();
+            cmbDepartment.Text = employeeinfo.Department;
+            // win2.DatePicker1.Text = employeeinfo.birthdate.ToString();
+            tbAddress.Text = employeeinfo.Address;
+            tbPostalCode.Text = employeeinfo.PostalCode;
+            tbPhone.Text = employeeinfo.Phone;
+            tbJobTitleCode.Text = employeeinfo.JobTitle;
+
         }
 
         //private void btnAddNew_Click(object sender, RoutedEventArgs e)
@@ -31,6 +45,7 @@ namespace HR
         //    edit.name = Employee[this.lsvEmployee.SelectedItems[0].Index].Name;
         //    edit.age = Employee[this.lsvEmployee.SelectedItems[0].Index].Age;
         //    edit.ShowDialog(this);
+        //    parentWindow.ReloadEmploeeList();
         //}
     }
 }

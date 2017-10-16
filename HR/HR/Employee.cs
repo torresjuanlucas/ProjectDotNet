@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HR
 {
-    class Employee
+    public class Employee
     {
         private int id;//{ get; set; }
         private string fullName; // { get; set; }
