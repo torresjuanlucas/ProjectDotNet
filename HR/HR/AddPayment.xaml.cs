@@ -31,13 +31,13 @@ namespace HR
             double hourlyRate;
             if (!double.TryParse(tbHourlyRatePay.Text, out hourlyRate))
             {
-                MessageBox.Show("error input");
+                MessageBox.Show("Please, enter the hourly rate");
                 return;
             }
             double hours;
             if (!double.TryParse(tbNoOfHoursPay.Text, out hours))
             {
-                MessageBox.Show("error input");
+                MessageBox.Show("Please, enter the amount of hours worked");
                 return;
             }
 
@@ -61,20 +61,20 @@ namespace HR
         private void btnSavePayment_Click(object sender, RoutedEventArgs e)
         {
 
-            //collect info from the text boxs:            
+            //collect info from the text boxes:            
 
             int id = Convert.ToInt32(tbEmployeeID.Text);
 
             double hourlyRate;
             if (!double.TryParse(tbHourlyRatePay.Text, out hourlyRate))
             {
-                MessageBox.Show("error input");
+                MessageBox.Show("Please, enter the hourly rate");
                 return;
             }
             double hours;
             if (!double.TryParse(tbNoOfHoursPay.Text, out hours))
             {
-                MessageBox.Show("error input");
+                MessageBox.Show("Please, enter the amount of hours worked");
                 return;
             }
 
@@ -94,7 +94,7 @@ namespace HR
             {
                 db = new ProjectDatabase();
                 db.AddPayment(payment);
-                MessageBox.Show("The Payment record was successfully saved .");
+                MessageBox.Show("The Payment record was successfully saved.");
                 this.Close();
             }
             catch (SqlException ex)

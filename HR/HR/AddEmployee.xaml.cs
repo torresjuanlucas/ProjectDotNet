@@ -22,13 +22,17 @@ namespace HR
     {
         ProjectDatabase db = new ProjectDatabase();
 
-        public AddEmployee()
+        MainWindow parentWindow;
+
+        public AddEmployee(MainWindow parent)
         {
+            parentWindow = parent;
             InitializeComponent();
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+
             Employee emp = new Employee();
             emp.FullName = tbFullName.Text;
             emp.Department = cmbDepartment.Text;
@@ -39,6 +43,9 @@ namespace HR
             emp.Phone = tbPhone.Text;
             db.AddEmployee(emp);
             MessageBox.Show("Employee has been added succefully!");
+            Close();
+            parentWindow.ReloadEmployeeList();
+            
 
         }
 

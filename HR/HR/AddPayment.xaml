@@ -18,11 +18,7 @@
             </Grid.ColumnDefinitions>
 
             <Label Content="Employee ID" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,60,0,0"/>
-<<<<<<< HEAD
-            <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsReadOnlyCaretVisible="True" IsEnabled="False"/>
-=======
             <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
->>>>>>> ba05cd3472b3434be6d00c031ee8c09e33288e53
             <TextBox  Name="tbFullNamePay" HorizontalAlignment="Left" Height="24" Margin="0,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
             <TextBox Name="tbHourlyRatePay" HorizontalAlignment="Left" Height="24" Margin="0,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
             <TextBox Name="tbNoOfHoursPay" HorizontalAlignment="Left" Height="24" Margin="0,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>

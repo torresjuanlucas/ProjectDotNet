@@ -64,7 +64,7 @@ namespace HR
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            AddEmployee win2 = new AddEmployee();
+            AddEmployee win2 = new AddEmployee(this);
             win2.ShowDialog();
            // this.Close();
         }
@@ -75,7 +75,7 @@ namespace HR
        
 
 
-        private void ReloadEmployeeList()
+        public void ReloadEmployeeList()
         {
          List<Employee> list = db.GetAllEmployees();
             lsvEmployee.Items.Clear();
