@@ -35,12 +35,12 @@
                 <TextBox  Name="tbAddress" HorizontalAlignment="Left" Height="24" Margin="70,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
                 <TextBox   Name="tbPostalCode" HorizontalAlignment="Left" Height="24" Margin="70,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
                 <TextBox   Name="tbPhone" HorizontalAlignment="Left" Height="24" Margin="70,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
-                <Button   Name="btnClear" Content="cancel" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,268,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF" />
+                <Button   Name="btnClear" Content="cancel" Grid.Column="3" HorizontalAlignment="Left" Height="36" Margin="211,268,0,0" VerticalAlignment="Top" Width="155" Background="#FF23FF00" />
                 <Label  Name="lblJobTitleCode" Content="Job Title" Height="24" Margin="4,279,63,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
                 <TextBox  Name="tbJobTitleCode" HorizontalAlignment="Left" Height="24" Margin="70,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
-                <Button  Name="btnAddNew" Content="save" Grid.Column="3" HorizontalAlignment="Left" Height="39" Margin="211,219,0,0" VerticalAlignment="Top" Width="155" Background="#FF00DCFF"   />
+                <Button  Name="btnAddNew" Content="save" Grid.Column="3" HorizontalAlignment="Left" Height="39" Margin="211,219,0,0" VerticalAlignment="Top" Width="155" Background="#FF23FF00"   />
                 <Grid  Margin="0,0,162,0"  Grid.Column="3" >
-                    <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-47,132,0,0" VerticalAlignment="Top" Width="220">
+                    <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-46,132,0,0" VerticalAlignment="Top" Width="219">
                         <ComboBoxItem   Name="Marketing">Marketing</ComboBoxItem>
                         <ComboBoxItem  Name="IT">IT</ComboBoxItem>
                         <ComboBoxItem  Name="Finance">Finance</ComboBoxItem>

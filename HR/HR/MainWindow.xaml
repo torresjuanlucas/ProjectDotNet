@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HR"
         mc:Ignorable="d"
-        Title="MainWindow" Height="630.671" Width="818.86" Background="#FF363434">
+        Title="Primo Payroll" Height="630.671" Width="818.86" Background="#FF363434">
 
     <Window.Resources>
         <ContextMenu x:Key="lsvEmployee">
@@ -15,14 +15,13 @@
 
     <Grid Margin="0,10,2,-5">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="104*"/>
-
-            <RowDefinition/>
-        </Grid.RowDefinitions>
+        <Grid Margin="36,77,319,366">
+            <Image Source="Image/Payroll.png" Margin="0,-61,136,107"/>
+        </Grid>
 
 
-        <TabControl HorizontalAlignment="Left" Height="386" Margin="30,149,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A"  >
+
+        <TabControl HorizontalAlignment="Left" Height="386" Margin="36,161,0,0" VerticalAlignment="Top" Width="742" BorderBrush="#FF00F3FF" Background="#FF4F4A4A"  >
             <TabItem Header="Employee" Margin="-2,-2,-26,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="367">
 
                 <Grid>
@@ -30,7 +29,7 @@
                         <ColumnDefinition Width="409*"/>
                         <ColumnDefinition Width="327*"/>
                     </Grid.ColumnDefinitions>
-                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp" Grid.ColumnSpan="2"  >
+                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp" Grid.ColumnSpan="2" Background="#FFF0EBEB"  >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Id}"/>
@@ -48,18 +47,18 @@
                     </ListView>
 
 
-                    <Button Name ="Update" Content="Update" Height="49" Margin="197,296,58,13" Click="Update_Click" />
-                    <Button Name="Add" Content="Add" Height="49" Margin="16,296,239,13" Click="Add_Click"/>
-                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="380,296,202,13" Click="Add_Click" Grid.ColumnSpan="2"/>
-                    <Button x:Name="Add_Copy1" Content="&#xA;Add Payment&#xA;" Height="49" Margin="154,296,19,13" Click="AddPayment_Click" Grid.Column="1" />
+                    <Button Name ="Update" Content="Update" Height="49" Margin="197,296,34,13" Click="Update_Click" Background="#FF645E5A" BorderBrush="#FF2EFF00" Foreground="#FF2EFF00" />
+                    <Button Name="Add" Content="Add" Height="49" Margin="16,296,217,13" Click="Add_Click" Background="#FF5A6364" BorderBrush="#FF00DCFF" Foreground="#FF00DCFF"/>
+                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="380,296,189,13" Click="Add_Click" Grid.ColumnSpan="2" Background="#FF645A5D" BorderBrush="Yellow" Foreground="Yellow"/>
+                    <Button x:Name="Add_Copy1" Content="Add Payment" Height="49" Margin="143,296,19,13" Click="AddPayment_Click" Grid.Column="1" Background="#FF645E5A" BorderBrush="#FFFF9700" Foreground="#FFFF9700" />
                 </Grid>
             </TabItem>
-            <TabItem Header="Report" Margin="0,-3,-24,1" HorizontalAlignment="Right" Width="348" Foreground="#FF23FF00" Background="#FF4F4A4A" BorderBrush="#FF4F4A4A" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <TabItem Header="Report" Margin="0,-1,-4,0" HorizontalAlignment="Right" Width="369" Foreground="#FFFF9700" Background="#FF4F4A4A" BorderBrush="#FFFF9700" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
                 <TabItem.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="0.317"/>
+                        <RotateTransform Angle="-0.079"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </TabItem.RenderTransform>
@@ -77,6 +76,7 @@
 
 
         </TabControl>
+
 
 
 

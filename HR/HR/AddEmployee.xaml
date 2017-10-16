@@ -12,7 +12,7 @@
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Background="#FF4F4A4A" Margin="0,0,10,10" Grid.ColumnSpan="2">
+        <Grid Background="#FF4F4A4A" Margin="0,0,8,0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="71*"/>
                 <ColumnDefinition Width="93*"/>
@@ -27,7 +27,7 @@
             <Label Content="Address" HorizontalAlignment="Left" Height="24" Margin="4,191,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
             <Label Content="Postal Code" HorizontalAlignment="Left" Height="24" Margin="4,220,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
             <Label Content="Phone" HorizontalAlignment="Left" Height="24" Margin="4,249,0,0" VerticalAlignment="Top" Width="101" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
-            <DatePicker  Name="DatePicker1" Grid.Column="2" HorizontalAlignment="Left" Margin="68,162,0,0" VerticalAlignment="Top" Width="227" Height="24" Grid.ColumnSpan="2"/>
+            <DatePicker  Name="DatePicker1" Grid.Column="2" HorizontalAlignment="Left" Margin="70,162,0,0" VerticalAlignment="Top" Width="219" Height="24" Grid.ColumnSpan="2"/>
 
 
             <TextBox  Name="tbFullName" HorizontalAlignment="Left" Height="24" Margin="70,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2"  Background="#FF9E9797" Grid.ColumnSpan="2"/>
@@ -39,7 +39,7 @@
             <Label  Name="lblJobTitleCode" Content="Job Title" Height="24" Margin="4,279,63,0" VerticalAlignment="Top" Foreground="White" Grid.ColumnSpan="2" Grid.Column="1"/>
             <TextBox  Name="tbJobTitleCode" HorizontalAlignment="Left" Height="24" Margin="70,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Grid.Column="2" Background="#FF9E9797" Grid.ColumnSpan="2"/>
             <Grid  Margin="0,0,162,0"  Grid.Column="3" >
-                <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-58,133,0,0" VerticalAlignment="Top" Width="220">
+                <ComboBox  Name="cmbDepartment" HorizontalAlignment="Left" Height="24" Margin="-57,133,0,0" VerticalAlignment="Top" Width="219">
                     <ComboBoxItem   Name="Marketing">Marketing</ComboBoxItem>
                     <ComboBoxItem  Name="IT">IT</ComboBoxItem>
                     <ComboBoxItem  Name="Finance">Finance</ComboBoxItem>
