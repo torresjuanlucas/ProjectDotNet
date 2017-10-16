@@ -18,7 +18,11 @@
             </Grid.ColumnDefinitions>
 
             <Label Content="Employee ID" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,60,0,0"/>
+<<<<<<< HEAD
             <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsReadOnlyCaretVisible="True" IsEnabled="False"/>
+=======
+            <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
+>>>>>>> ba05cd3472b3434be6d00c031ee8c09e33288e53
             <TextBox  Name="tbFullNamePay" HorizontalAlignment="Left" Height="24" Margin="0,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
             <TextBox Name="tbHourlyRatePay" HorizontalAlignment="Left" Height="24" Margin="0,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
             <TextBox Name="tbNoOfHoursPay" HorizontalAlignment="Left" Height="24" Margin="0,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
@@ -29,14 +33,13 @@
             <Label Content="Full Name" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,91,0,0"/>
             <Label Content="Hourly Rate" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,123,0,0"/>
             <Label Content="NO. Of Hours" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,155,0,0"/>
-            <Label Content="Total Gross" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,187,0,0"/>
-            <Label Content="Federal Tax(7.5%)" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,218,0,0"/>
-            <Label Content="Provincial Tax(7.5%)" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,250,0,0"/>
-            <Label Content="Total Net Pay" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,282,0,0"/>
+            <Label Content="Total Gross $" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,187,0,0"/>
+            <Label Content="Federal Tax(7.5%) $" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,218,0,0"/>
+            <Label Content="Provincial Tax(7.5%) $" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,250,0,0"/>
+            <Label Content="Total Net Pay $" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,282,0,0"/>
 
-            <Button   Name="btnCalculate" Content="Calculate Net Pay" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,177,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000" Click="btnCalculate_Click" />
-            <Button   Name="btnSavePayment"  Content="Save" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,222,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000" Click="btnSavePayment_Click"/>
-            <Button   Name="btnPrintPayment" Content="Print" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,267,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000"/>
+            <Button   Name="btnCalculate" Content="Calculate Net Pay" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,222,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000" Click="btnCalculate_Click" />
+            <Button   Name="btnSavePayment"  Content="Save" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,267,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000" Click="btnSavePayment_Click"/>
 
 
         </Grid>
