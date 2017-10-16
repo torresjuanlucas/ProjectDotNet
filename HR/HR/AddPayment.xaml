@@ -18,14 +18,14 @@
             </Grid.ColumnDefinitions>
 
             <Label Content="Employee ID" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,60,0,0"/>
-            <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-            <TextBox  Name="tbFullNamePay" HorizontalAlignment="Left" Height="24" Margin="0,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
+            <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsReadOnlyCaretVisible="True" IsEnabled="False"/>
+            <TextBox  Name="tbFullNamePay" HorizontalAlignment="Left" Height="24" Margin="0,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
             <TextBox Name="tbHourlyRatePay" HorizontalAlignment="Left" Height="24" Margin="0,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
             <TextBox Name="tbNoOfHoursPay" HorizontalAlignment="Left" Height="24" Margin="0,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-            <TextBox  Name="tbTotalGrossPay" HorizontalAlignment="Left" Height="24" Margin="0,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-            <TextBox  Name="tbFederalTaxPay" HorizontalAlignment="Left" Height="24" Margin="0,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-            <TextBox  Name="tbProvincialTaxPay" HorizontalAlignment="Left" Height="24" Margin="0,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-            <TextBox Name="tbTotalNetPay" HorizontalAlignment="Left" Height="24" Margin="0,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
+            <TextBox  Name="tbTotalGrossPay" HorizontalAlignment="Left" Height="24" Margin="0,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
+            <TextBox  Name="tbFederalTaxPay" HorizontalAlignment="Left" Height="24" Margin="0,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
+            <TextBox  Name="tbProvincialTaxPay" HorizontalAlignment="Left" Height="24" Margin="0,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
+            <TextBox Name="tbTotalNetPay" HorizontalAlignment="Left" Height="24" Margin="0,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1" IsEnabled="False"/>
             <Label Content="Full Name" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,91,0,0"/>
             <Label Content="Hourly Rate" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,123,0,0"/>
             <Label Content="NO. Of Hours" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,155,0,0"/>
