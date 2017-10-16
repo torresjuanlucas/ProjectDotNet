@@ -21,6 +21,7 @@ namespace HR
     public partial class AddPayment : Window
     {
         ProjectDatabase db;
+
         public AddPayment()
         {
             InitializeComponent();

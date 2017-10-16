@@ -40,6 +40,8 @@ namespace HR
         }
 
 
+
+        //update button 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
            
@@ -47,20 +49,15 @@ namespace HR
             Employee employeeinfo = (Employee)lsvEmployee.SelectedItem;
 
 
-            UpdateEmployee win2 = new UpdateEmployee();
-            win2.ShowDialog();
-
-            win2.tbFullName.Text = employeeinfo.FullName.ToString();
-            win2.cmbDepartment.Text = employeeinfo.Department;
-           // win2.DatePicker1.Text = employeeinfo.birthdate.ToString();
-            win2.tbAddress.Text = employeeinfo.Address;
-            win2.tbPostalCode.Text = employeeinfo.PostalCode;
-            win2.tbPhone.Text = employeeinfo.Phone;
-            win2.tbJobTitleCode.Text = employeeinfo.JobTitle;
-
-            win2.ShowDialog();
+            UpdateEmployee updateWindow = new UpdateEmployee(this, employeeinfo);
+            updateWindow.ShowDialog();
 
         }
+
+
+
+
+
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
