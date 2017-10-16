@@ -5,17 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HR"
         mc:Ignorable="d"
-        Title="MainWindow" Height="646.671" Width="815.86" Background="#FF363434">
+        Title="MainWindow" Height="630.671" Width="818.86" Background="#FF363434">
 
     <Window.Resources>
         <ContextMenu x:Key="lsvEmployee">
             <MenuItem Header="Delete"  Click="MenuItemDelete_Click"/>
         </ContextMenu>
     </Window.Resources>
-    <Grid Margin="0,6,-1,-27">
 
-        <TabControl HorizontalAlignment="Left" Height="386" Margin="34,192,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A"  >
-            <TabItem Header="Employee" Margin="-2,-2,-123,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="250">
+    <Grid Margin="0,6,2,-2">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="104*"/>
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <TabControl HorizontalAlignment="Left" Height="386" Margin="30,149,0,0" VerticalAlignment="Top" Width="742" BorderBrush="White" Background="#FF4F4A4A"  >
+            <TabItem Header="Employee" Margin="-2,-2,-26,0" BorderBrush="#FF4F4A4A" Background="#FF4F4A4A" Foreground="#FF00DCFF" FontWeight="Bold" HorizontalAlignment="Left" Width="367">
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -40,48 +48,21 @@
                     </ListView>
 
 
-                    <Button Name ="Update" Content="Update" Height="49" Margin="299,299,306,10" Click="Update_Click" Grid.ColumnSpan="2" />
-                    <Button Name="Add" Content="Add" Height="49" Margin="163,299,115,10" Click="Add_Click"/>
-                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="26,299,170,10" Click="Add_Click" Grid.Column="1"/>
-                    <Button x:Name="Add_Copy1" Content="add Payment&#xA;" Height="49" Margin="162,299,34,10" Click="AddPayment_Click" Grid.Column="1"/>
+                    <Button Name ="Update" Content="Update" Height="49" Margin="197,296,58,13" Click="Update_Click" />
+                    <Button Name="Add" Content="Add" Height="49" Margin="16,296,239,13" Click="Add_Click"/>
+                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="380,296,202,13" Click="Add_Click" Grid.ColumnSpan="2"/>
+                    <Button x:Name="Add_Copy1" Content="&#xD;&#xA;add Payment&#xA;" Height="49" Margin="154,296,19,13" Click="AddPayment_Click" Grid.Column="1"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Payment" HorizontalAlignment="Right" Width="241" RenderTransformOrigin="0.248,0.409" Background="#FF4F4A4A" Foreground="#FFFF8000" BorderBrush="#FF4F4A4A" FontWeight="Bold" Height="20" VerticalAlignment="Bottom" Margin="0,-2,-12,2">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="13*"/>
-                        <ColumnDefinition Width="33*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Label Content="Employee ID" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,28,0,0"/>
-                    <TextBox  Name="tbEmployeeID" HorizontalAlignment="Left" Height="24" Margin="0,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox  Name="tbFullNamePay" HorizontalAlignment="Left" Height="24" Margin="0,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox Name="tbHourlyRatePay" HorizontalAlignment="Left" Height="24" Margin="0,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox Name="tbNoOfHoursPay" HorizontalAlignment="Left" Height="24" Margin="0,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox Name="tbBankAccountPay" HorizontalAlignment="Left" Height="24" Margin="0,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox  Name="tbTotalGrossPay" HorizontalAlignment="Left" Height="24" Margin="0,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox  Name="tbFederalTaxPay" HorizontalAlignment="Left" Height="24" Margin="0,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox  Name="tbProvincialTaxPay" HorizontalAlignment="Left" Height="24" Margin="0,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <TextBox Name="tbTotalNetPay" HorizontalAlignment="Left" Height="24" Margin="0,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" BorderBrush="#FF6C6868" Background="#FF9E9797" Grid.Column="1"/>
-                    <Label Content="Full Name" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,59,0,0"/>
-                    <Label Content="Hourly Rate" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,91,0,0"/>
-                    <Label Content="NO. Of Hours" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,123,0,0"/>
-                    <Label Content="Bank Account NO." HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,155,0,0"/>
-                    <Label Content="Total Gross" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,187,0,0"/>
-                    <Label Content="Federal Tax(7.5%)" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,218,0,0"/>
-                    <Label Content="Provincial Tax(7.5%)" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,250,0,0"/>
-                    <Label Content="Total Net Pay" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="155" Foreground="White" Margin="32,282,0,0"/>
-
-                    <Button   Name="btnCalculate" Content="Calculate Net Pay" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,131,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000" />
-                    <Button   Name="btnSavePayment"  Content="Save" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,176,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000"/>
-                    <Button   Name="btnPrintPayment" Content="Print" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,221,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000"/>
-                    <Button   Name="btnClearPayment" Content="Clear" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="275,267,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF8000"/>
-
-
-                </Grid>
-
-            </TabItem>
-            <TabItem Header="Report" Margin="0,-4,-19,2" HorizontalAlignment="Right" Width="229" Foreground="#FF23FF00" Background="#FF4F4A4A" BorderBrush="#FF4F4A4A" FontWeight="Bold">
+            <TabItem Header="Report" Margin="0,-3,-8,1" HorizontalAlignment="Right" Width="348" Foreground="#FF23FF00" Background="#FF4F4A4A" BorderBrush="#FF4F4A4A" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                <TabItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.317"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TabItem.RenderTransform>
                 <Grid Background="#FF4F4A4A" Margin="0,0,1,1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="64*"/>
@@ -96,6 +77,8 @@
 
 
         </TabControl>
+
+
 
 
 
