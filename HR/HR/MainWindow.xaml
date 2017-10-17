@@ -29,7 +29,7 @@
                         <ColumnDefinition Width="409*"/>
                         <ColumnDefinition Width="327*"/>
                     </Grid.ColumnDefinitions>
-                    <ListView Name="lsvEmployee" Margin="16,14,19,67" MouseRightButtonUp="lsvEmployee_MouseRightButtonUp" Grid.ColumnSpan="2" Background="#FFF0EBEB"  >
+                    <ListView Name="lsvEmployee" Margin="16,14,19,67"  Grid.ColumnSpan="2" Background="#FFF0EBEB"  >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=Id}"/>
@@ -49,7 +49,7 @@
 
                     <Button Name ="Update" Content="Update" Height="49" Margin="197,296,34,13" Click="Update_Click" Background="#FF645E5A" BorderBrush="#FF2EFF00" Foreground="#FF2EFF00" />
                     <Button Name="Add" Content="Add" Height="49" Margin="16,296,217,13" Click="Add_Click" Background="#FF5A6364" BorderBrush="#FF00DCFF" Foreground="#FF00DCFF"/>
-                    <Button x:Name="Add_Copy" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="380,296,189,13" Click="Add_Click" Grid.ColumnSpan="2" Background="#FF645A5D" BorderBrush="Yellow" Foreground="Yellow"/>
+                    <Button x:Name="btnDelete" Content="&#xD;&#xA;Delete&#xD;&#xA;" Height="49" Margin="380,296,189,13" Click="del_Click" Grid.ColumnSpan="2" Background="#FF645A5D" BorderBrush="Yellow" Foreground="Yellow"/>
                     <Button x:Name="Add_Copy1" Content="Add Payment" Height="49" Margin="143,296,19,13" Click="AddPayment_Click" Grid.Column="1" Background="#FF645E5A" BorderBrush="#FFFF9700" Foreground="#FFFF9700" />
                 </Grid>
             </TabItem>

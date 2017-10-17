@@ -41,13 +41,25 @@ namespace HR
             insertCommand.ExecuteNonQuery();
         }
 
+
+
         public void DeleteEmployee(int Id)
         {
+
+            //payment id 
+            string sqlDeletepay = "DELETE FROM Payment WHERE @Id = Id;";
             string sqlDelete = "DELETE FROM Employee WHERE @Id = Id;";
+
+            SqlCommand deleteCommandpay = new SqlCommand(sqlDeletepay, conn);
+            deleteCommandpay.Parameters.AddWithValue("@Id", Id);
+            deleteCommandpay.ExecuteNonQuery();
+
             SqlCommand deleteCommand = new SqlCommand(sqlDelete, conn);
             deleteCommand.Parameters.AddWithValue("@Id", Id);
             deleteCommand.ExecuteNonQuery();
         }
+
+
 
         public void UpdateEmployee(Employee emp)
         {
@@ -63,6 +75,9 @@ namespace HR
             updateCommand.Parameters.AddWithValue("@jobTitle", emp.JobTitle);
             updateCommand.ExecuteNonQuery();
         }
+
+
+
         public Employee GetEmployeeById(int id)
         {
 

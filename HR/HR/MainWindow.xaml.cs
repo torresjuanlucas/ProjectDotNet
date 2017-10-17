@@ -44,14 +44,24 @@ namespace HR
         //update button 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-           
 
             Employee employeeinfo = (Employee)lsvEmployee.SelectedItem;
 
 
-            UpdateEmployee updateWindow = new UpdateEmployee(this, employeeinfo);
+            UpdateEmployee updateWindow = new UpdateEmployee(this,employeeinfo);
             updateWindow.ShowDialog();
 
+
+            //employeeinfo.tbFullName.Text = employeeinfo.FullName.ToString();
+            //employeeinfo.cmbDepartment.String = employeeinfo.Department;
+
+            //// DatePicker1.Text = employeeinfo.birthdate.ToString();
+            //employeeinfo.tbAdress.Text = employeeinfo.Address;
+            //employeeinfo.tbPostalCode.Text = employeeinfo.PostalCode;
+            //employeeinfo.tbPhone.Text = employeeinfo.Phone;
+            //employeeinfo.tbJobTitle.Text = employeeinfo.JobTitle;
+
+            //employeeinfo.employeeinfo.ShowDialog();
         }
 
 
@@ -121,6 +131,27 @@ namespace HR
       
         }
 
+        private void del_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to delete?", "SMS DB", MessageBoxButton.YesNo);
+
+            Employee item = (Employee)lsvEmployee.SelectedItem;
+            int ID = item.Id;
+           
+            if (ID <= 0)
+            {
+
+                MessageBox.Show("You must select Employee.");
+            }
+            else
+            {
+                
+                    db.DeleteEmployee(ID);
+                    MessageBox.Show("Deleted successful.");
+                    ReloadEmployeeList();
+                
+            }
+        }
     }
 }
       

@@ -21,31 +21,71 @@ namespace HR
     {
         Employee employeeinfo;
         MainWindow parentWindow;
-
+        ProjectDatabase db = new ProjectDatabase();
         public UpdateEmployee(MainWindow parent, Employee toEditEmp)
         {
             parentWindow = parent;
             employeeinfo = toEditEmp;
             InitializeComponent();
             
+        }
+
+        //public AddPayment()
+        //{
+        //    InitializeComponent();
+        //}
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+
+
+
             tbFullName.Text = employeeinfo.FullName.ToString();
             cmbDepartment.Text = employeeinfo.Department;
-            // win2.DatePicker1.Text = employeeinfo.birthdate.ToString();
+            // DatePicker1.Text = employeeinfo.birthdate.ToString();
             tbAddress.Text = employeeinfo.Address;
             tbPostalCode.Text = employeeinfo.PostalCode;
             tbPhone.Text = employeeinfo.Phone;
             tbJobTitleCode.Text = employeeinfo.JobTitle;
 
+
+
+
+            //Employee emp = db.GetAllEmployees<>();
+            //emp.FullName = tbFullName.Text;
+            //emp.Department = cmbDepartment.Text;
+            //emp.BirthDate = DateTime.Parse(DatePicker1.Text);
+            //emp.Address = tbAddress.Text;
+            //emp.PostalCode = tbPostalCode.Text;
+            //emp.JobTitle = tbJobTitleCode.Text;
+            //emp.Phone = tbPhone.Text;
+            //db.UpdateEmployee(emp);
+            //MessageBox.Show("Employee has been Updated succefully!");
+            //Close();
+            //parentWindow.ReloadEmployeeList();
+
+
+
+            //// Employees emp = new Employees();
+            //Employee emp = db.GetEmployeeById(id);
+            //// data after update
+            //emp.EmployeeID = id;
+            //emp.FirstName = tbFirstName.Text;
+            //emp.LastName = tbLastName.Text;
+            //emp.HireDate = DateTime.Parse(tbHireDate.Text);
+            //emp.Address = tbAddress.Text;
+            //emp.UserName = tbUserName.Text;
+            //emp.Password = tbPassword.Text;
+            //emp.Phone = tbPhone.Text;
+
+            //db.UpdateEmployee(emp);
+            //MessageBox.Show("The Employee has been successfully updated");
+
         }
 
-        //private void btnAddNew_Click(object sender, RoutedEventArgs e)
-        //{
-        //    UpdateEmployee edit = new UpdateEmployee();
-        //    edit.SaveEvent += new UpdateEmployee.SaveEventHandler(edit_SaveEvent);  //Add event handler
-        //    edit.name = Employee[this.lsvEmployee.SelectedItems[0].Index].Name;
-        //    edit.age = Employee[this.lsvEmployee.SelectedItems[0].Index].Age;
-        //    edit.ShowDialog(this);
-        //    parentWindow.ReloadEmploeeList();
-        //}
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
