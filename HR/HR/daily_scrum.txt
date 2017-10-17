@@ -160,7 +160,7 @@ the pushstart from Gregory was very helpful, before we tried to do too many thin
 
 2017/10/13 Mojgan (Friday)
 1. Done / not done
-
+-added new functions in database class to get the AddEmployee window worked.
 -coded the AddEmployee window to get the user data 
 -the user input is loaded as a record to the listview on the main window
 
@@ -182,6 +182,100 @@ keep working on the ProjectDatabase class
 
 3. Where I need help?
 I need help to organize the project's steps.
+
+
+
+
+2017/10/14 Mojgan (Saturday)
+1.done
+-added AddEmployee function to Database class.
+-got the new added employee records shown in the mainwindow listview.
+-removed payment tab from the tabControl.
+-created AddPayment button in the mainwindow and AddPayment window. 
+
+2. Will do in next 24 hours
+-coding the Calculate Net pay Button and the needed math functions.
+
+3. Where I need help?
+-for transfering data from the database (according which item is choosen) 
+to AddPayment window textboxes.
+
+
+
+2017/10/14 Lucas (Saturday)
+1. Done / not done
+-.tables and database are completed.
+-when the user enters the information, the database collects employee information properly.
+
+2. Will do in next 24 hours
+-try to deal with the parentwindow implementation.
+-create the btnCalculate_Click event and do implementation.
+Editing Trello.
+
+3. Where I need help?
+-in every line of code
+
+
+2017/10/15 Mojgan (Sunday)
+1.done
+-woked on AddPayment window in the mainwindow(got the calculate netpay fixed).
+-tried to transfering data from the database(I asked Vaji for showing data in AddPayment Window textboxes).
+
+2. Will do in next 24 hours
+
+- implement code behind the delete button in mainwindow.xaml.cs(deleting items from listview) 
+- getting update button worked(Update window should be done).
+
+3. Where I need help?
+-any part of those is a challenge.I can't solve it on my own.
+(I asked Vaji for showing data in AddPayment Window textboxes,she helped with the code which reads
+data from database directly).
+
+
+2017/10/15 Lucas (Sunday)
+1. Done / not done
+-database is done with SQL management system.
+-modify class ProjectDatabase and class Employee.
+
+2. Will do in next 24 hours
+-modify AddPayment() to do payment calculations and save them on the database.
+modify DeleteEmployee.xaml.cs (create an event inside btnAddNew_Click).
+Editing Trello.
+
+3. Where I need help?
+-need more general practice on basic coding, not doing enough.
+
+
+2017/10/16 Mojgan (Monday)
+1.done 
+-add delete function to database class.
+-made presentation in powerpoint,prepared the screenshots and materials.
+-implemented code behind the delete button in mainwindow.xaml.cs
+-made the UI fancier
+-tried to fix Update window,got the Update button in UpdateWindow worked but not properly! 
+
+2. Will do in next 24 hours
+-searching new stuff in HR managemet and real world application samples.
+
+3. Where I need help?
+-for getting update button worked,I need to ask Mohammad to figure it out.
+
+
+2017/10/16 Lucas (Monday)
+1. Done / not done
+-enable and disable editing for the textboxes on the different windows. 
+
+2. Will do in next 24 hours
+-modify class ProjectDatabase and class Employee.
+make UpdateEmployee.xaml.cs (create an event inside btnAddNew_Click).
+Editing Trello.
+
+3. Where I need help?
+-same as before, the other group members helped me but still behind.
+
+
+
+
 
 
 

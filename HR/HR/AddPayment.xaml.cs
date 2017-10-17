@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace HR
 {
-    /// <summary>
-    /// Interaction logic for AddPayment.xaml
-    /// </summary>
+    
     public partial class AddPayment : Window
     {
         ProjectDatabase db;

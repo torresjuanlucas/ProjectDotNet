@@ -149,37 +149,6 @@ namespace HR
 
 
 
-
-        //Add PAyment --get information for Add payment dialogue
-
-        //public Payment GetPaymentById(int id)
-        //{
-
-        //    string sqlDelete = "SELECT * FROM Payment WHERE Id = @Id;";
-        //    SqlCommand Command = new SqlCommand(sqlDelete, conn);
-        //    Command.Parameters.AddWithValue("@Id", id);
-        //    using (var reader = Command.ExecuteReader())
-        //    {
-        //        if (reader.Read())
-        //        {
-
-
-
-     
-        //pay = new Payment
-        //            {
-        //    PaymentId = (int)reader["paymentId"],
-        //    Id = (int)reader["id"],
-        //    HourlyRate = decimal.Parse(reader["hourlyRate"].ToString()),
-        //    Hours = reader["hours"].ToString(),
-        //    NetPay = decimal.Parse(reader["netPay"].ToString()),
-                     
-        //            };
-        //        }
-
-        //    }
-
-        //    return pay;
-        //}
+        
     }
 }

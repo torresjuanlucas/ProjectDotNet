@@ -18,9 +18,6 @@ using System.Windows.Shapes;
 
 namespace HR
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         ProjectDatabase db;
@@ -52,16 +49,6 @@ namespace HR
             updateWindow.ShowDialog();
 
 
-            //employeeinfo.tbFullName.Text = employeeinfo.FullName.ToString();
-            //employeeinfo.cmbDepartment.String = employeeinfo.Department;
-
-            //// DatePicker1.Text = employeeinfo.birthdate.ToString();
-            //employeeinfo.tbAdress.Text = employeeinfo.Address;
-            //employeeinfo.tbPostalCode.Text = employeeinfo.PostalCode;
-            //employeeinfo.tbPhone.Text = employeeinfo.Phone;
-            //employeeinfo.tbJobTitle.Text = employeeinfo.JobTitle;
-
-            //employeeinfo.employeeinfo.ShowDialog();
         }
 
 

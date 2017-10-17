@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace HR
 {
-    /// <summary>
-    /// Interaction logic for AddEmployee.xaml
-    /// </summary>
+  
     public partial class AddEmployee : Window
     {
         ProjectDatabase db = new ProjectDatabase();
